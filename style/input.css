@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Preahvihear';
+  src: url('/assets/Preahvihear-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Preahvihear {
+  font-family: Preahvihear, sans-serif;
+}

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emmanuel Kigem - Full Stack Web Developer specializing in Telegram Bots, Mini Apps, and Web3. Creator of Snapp JS Framework.">
+    <meta name="keywords" content="Full Stack Developer, Telegram Bots, Telegram Mini Apps, Web Developer, Blockchain, Web3, Snapp Framework, JavaScript, React, Node.js">
+    <meta name="author" content="Emmanuel Kigem">
+    <meta property="og:title" content="Emmanuel Kigem - Full Stack Developer">
+    <meta property="og:description" content="Building the next generation of digital solutions. Specializing in Telegram Bots, Mini Apps, and Web3 Development.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Emmanuel Kigem - Full Stack Developer">
+    <meta name="twitter:description" content="Building the next generation of digital solutions">
+    <title>Emmanuel Kigem | Full Stack Developer & Snapp Framework Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #00f7ff 0%, #0099ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 247, 255, 0.2);
+        }
+        
+        .tech-badge {
+            transition: all 0.3s ease;
+        }
+        
+        .tech-badge:hover {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, #00f7ff 0%, #0099ff 100%);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(135deg, #00f7ff 0%, #0099ff 100%);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .particle {
+            position: absolute;
+            background: #00f7ff;
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0.6;
+            animation: particleFloat 4s ease-in-out infinite;
+        }
+        
+        @keyframes particleFloat {
+            0%, 100% { transform: translate(0, 0); }
+            25% { transform: translate(10px, -10px); }
+            50% { transform: translate(-5px, -20px); }
+            75% { transform: translate(-10px, -10px); }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-white scroll-smooth">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-slate-900/80 backdrop-blur-lg z-50 border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#home" class="text-2xl font-bold gradient-text">kigemmanuel</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link hover:text-cyan-400">About</a>
+                    <a href="#skills" class="nav-link hover:text-cyan-400">Skills</a>
+                    <a href="#projects" class="nav-link hover:text-cyan-400">Projects</a>
+                    <a href="#contact" class="nav-link hover:text-cyan-400">Contact</a>
+                </div>
+                <a href="#contact" class="bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-2 rounded-full hover:shadow-lg hover:shadow-cyan-500/50 transition-all">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="particle" style="width: 4px; height: 4px; top: 20%; left: 10%; animation-delay: 0s;"></div>
+            <div class="particle" style="width: 6px; height: 6px; top: 60%; left: 80%; animation-delay: 1s;"></div>
+            <div class="particle" style="width: 3px; height: 3px; top: 40%; left: 60%; animation-delay: 2s;"></div>
+            <div class="particle" style="width: 5px; height: 5px; top: 80%; left: 30%; animation-delay: 1.5s;"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="fade-in-up">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    Hey, I'm <span class="gradient-text">Emmanuel</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-4">Full Stack Developer</p>
+                <p class="text-lg text-gray-500 mb-8 leading-relaxed">
+                    Building the next generation of digital solutions. Specializing in <span class="text-cyan-400">Telegram Bots</span>, 
+                    <span class="text-cyan-400">Mini Apps</span>, and <span class="text-cyan-400">Web3</span> Development.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="border-2 border-cyan-500 px-8 py-3 rounded-full font-semibold hover:bg-cyan-500/10 transition-all">
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="flex gap-6 mt-8">
+                    <a href="https://github.com/kigemmanuel" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/kigemmanuel0" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="mailto:kigemmanuel.dev@gmail.com" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="floating hidden md:block">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-3xl opacity-20"></div>
+                    <img src="image.jpg" alt="Emmanuel Kigem" class="rounded-full w-96 h-96 object-cover border-4 border-cyan-500/30 shadow-2xl shadow-cyan-500/20 relative z-10 mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+                About <span class="gradient-text">Me</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6">Code is poetry written in logic</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        I'm a passionate Full Stack Developer with expertise in building innovative digital solutions. 
+                        My journey in tech has led me to specialize in Telegram Bot development, Mini Apps, and blockchain technology.
+                    </p>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        As the creator of the <span class="text-cyan-400 font-semibold">Snapp JS Framework</span>, I'm committed to 
+                        pushing the boundaries of what's possible in web development. I combine technical excellence with creative 
+                        problem-solving to deliver exceptional results.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Problem Solver</h4>
+                                <p class="text-gray-500 text-sm">Turning complex challenges into elegant solutions</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Digital Innovator</h4>
+                                <p class="text-gray-500 text-sm">Building the future, one line of code at a time</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Continuous Learner</h4>
+                                <p class="text-gray-500 text-sm">Currently mastering Rust and expanding my toolkit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700">
+                    <pre class="text-sm text-gray-300 overflow-x-auto"><code class="language-javascript">const kigemmanuel = {
+  role: "Full Stack Developer",
+  specialization: [
+    "Telegram Bots",
+    "Telegram Mini Apps",
+    "Web Development"
+  ],
+  creator: "Snapp JS Framework",
+  interests: [
+    "Blockchain",
+    "AI",
+    "Web3"
+  ],
+  mindset: "Problem solver",
+  status: "Building the future",
+  philosophy: "Code is poetry"
+};
+
+console.log("🚀 Ready to innovate!");</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+                Tech <span class="gradient-text">Arsenal</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Frontend -->
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">HTML5</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">CSS3</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">JavaScript</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">TypeScript</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">React</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Backend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">Node.js</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">Express.js</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">PHP</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">MySQL</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Specialized -->
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Specialized</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">Telegram Bots</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">Snapp Framework</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">Web3</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">Blockchain</span>
+                        <span class="tech-badge bg-slate-700 px-4 py-2 rounded-full text-sm">Rust</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Currently Learning -->
+            <div class="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 p-8 rounded-2xl border border-cyan-500/30">
+                <h3 class="text-2xl font-bold mb-6 text-center">🎯 2025 Focus Areas</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-slate-800 px-6 py-3 rounded-full text-lg font-semibold border border-cyan-500/50">Node.js Advanced</span>
+                    <span class="bg-slate-800 px-6 py-3 rounded-full text-lg font-semibold border border-cyan-500/50">Rust Mastery</span>
+                    <span class="bg-slate-800 px-6 py-3 rounded-full text-lg font-semibold border border-cyan-500/50">Snapp Framework</span>
+                    <span class="bg-slate-800 px-6 py-3 rounded-full text-lg font-semibold border border-cyan-500/50">React Optimization</span>
+                    <span class="bg-slate-800 px-6 py-3 rounded-full text-lg font-semibold border border-cyan-500/50">Advanced Tailwind</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+                Featured <span class="gradient-text">Projects</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Snapp Framework -->
+                <div class="bg-slate-800/50 rounded-2xl border border-slate-700 overflow-hidden card-hover">
+                    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-48 flex items-center justify-center">
+                        <div class="text-6xl font-bold">SNAPP</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4">Snapp JS Framework</h3>
+                        <p class="text-gray-400 mb-6">
+                            A modern, lightweight JavaScript framework designed for building fast and efficient web applications. 
+                            Snapp provides an intuitive API and powerful features for developers.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full text-sm">Framework</span>
+                            <span class="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full text-sm">Open Source</span>
+                        </div>
+                        <a href="https://github.com/kigemmanuel" target="_blank" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+                            View on GitHub
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Telegram Bots -->
+                <div class="bg-slate-800/50 rounded-2xl border border-slate-700 overflow-hidden card-hover">
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-48 flex items-center justify-center">
+                        <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4">Telegram Bot Solutions</h3>
+                        <p class="text-gray-400 mb-6">
+                            Custom Telegram bots and mini apps for various use cases including automation, customer service, 
+                            and interactive experiences. Specializing in scalable and efficient solutions.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">Telegram API</span>
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">Automation</span>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
+                            Learn More
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Web3 Projects -->
+                <div class="bg-slate-800/50 rounded-2xl border border-slate-700 overflow-hidden card-hover">
+                    <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-48 flex items-center justify-center">
+                        <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4">Web3 & Blockchain</h3>
+                        <p class="text-gray-400 mb-6">
+                            Exploring the decentralized web with blockchain integration, smart contracts, and cryptocurrency solutions. 
+                            Building bridges between traditional web and Web3 technologies.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded-full text-sm">Blockchain</span>
+                            <span class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded-full text-sm">Crypto</span>
+                            <span class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded-full text-sm">DeFi</span>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors">
+                            Explore Projects
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Full Stack Applications -->
+                <div class="bg-slate-800/50 rounded-2xl border border-slate-700 overflow-hidden card-hover">
+                    <div class="bg-gradient-to-r from-green-500 to-teal-500 h-48 flex items-center justify-center">
+                        <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4">Full Stack Applications</h3>
+                        <p class="text-gray-400 mb-6">
+                            End-to-end web applications with modern tech stacks. From responsive frontends to robust backends, 
+                            delivering complete solutions that scale.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors">
+                            View Portfolio
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Stats -->
+            <div class="mt-16 text-center">
+                <p class="text-gray-400 mb-6">Most of my work is in private repositories, but here's my public contribution:</p>
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 inline-block">
+                    <div class="flex items-center gap-6">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold gradient-text">96%</div>
+                            <div class="text-gray-400 text-sm mt-2">Private Repos</div>
+                        </div>
+                        <div class="h-16 w-px bg-slate-700"></div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-cyan-400">∞</div>
+                            <div class="text-gray-400 text-sm mt-2">Lines of Code</div>
+                        </div>
+                        <div class="h-16 w-px bg-slate-700"></div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-blue-400">100%</div>
+                            <div class="text-gray-400 text-sm mt-2">Dedication</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                Let's <span class="gradient-text">Connect</span>
+            </h2>
+            <p class="text-center text-gray-400 text-lg mb-16 max-w-2xl mx-auto">
+                Have a project in mind or want to collaborate? I'm always open to discussing new opportunities and interesting ideas.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 card-hover">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Email</h3>
+                                <a href="mailto:kigemmanuel.dev@gmail.com" class="text-cyan-400 hover:text-cyan-300">kigemmanuel.dev@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 card-hover">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">WhatsApp</h3>
+                                <a href="https://wa.me/2347045193996" target="_blank" class="text-cyan-400 hover:text-cyan-300">+234 704 519 3996</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 card-hover">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">GitHub</h3>
+                                <a href="https://github.com/kigemmanuel" target="_blank" class="text-cyan-400 hover:text-cyan-300">@kigemmanuel</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 card-hover">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Facebook</h3>
+                                <a href="https://www.facebook.com/kigemmanuel0" target="_blank" class="text-cyan-400 hover:text-cyan-300">@kigemmanuel0</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Your Name</label>
+                            <input type="text" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-cyan-500 transition-colors" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email Address</label>
+                            <input type="email" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-cyan-500 transition-colors" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea rows="5" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-cyan-500 transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-cyan-500 to-blue-500 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">kigemmanuel</h3>
+                    <p class="text-gray-400">Building the next generation of digital solutions with passion and precision.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-cyan-400 transition-colors">About</a></li>
+                        <li><a href="#skills" class="text-gray-400 hover:text-cyan-400 transition-colors">Skills</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-cyan-400 transition-colors">Projects</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-cyan-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/kigemmanuel" target="_blank" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/kigemmanuel0" target="_blank" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="mailto:kigemmanuel.dev@gmail.com" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                        </a>
+                        <a href="https://wa.me/2347045193996" target="_blank" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2025 Emmanuel Kigem. All rights reserved. | 
+                    <span class="gradient-text">Powered by coffee, driven by curiosity, fueled by code</span>
+                </p>
+                <p class="text-gray-500 text-sm mt-2">Built with ❤️ using HTML, Tailwind CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+            observer.observe(section);
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-cyan-400');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('text-cyan-400');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
