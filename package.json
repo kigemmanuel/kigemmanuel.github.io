@@ -1,11 +1,12 @@
 {
-  "scripts": {
-    "dev": "npm run snapp && npm run tailwindcss",
-    "snapp": "snapp build -W",
-    "tailwindcss": "tailwindcss -i style/input.css -o style/output.css --watch",
-    "build": " snapp build --minify && tailwindcss -i style/input.css -o style/output.css --minify"
-  },
+"scripts": {
+  "dev": "concurrently \"npm run snapp\" \"npm run tailwindcss\"",
+  "snapp": "snapp build -W",
+  "tailwindcss": "tailwindcss -i style/input.css -o style/output.css --watch",
+  "build": "concurrently \"snapp build --minify\" \"tailwindcss -i style/input.css -o style/output.css --minify\""
+},
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "tailwindcss": "^3.4.18"
   }
 }
