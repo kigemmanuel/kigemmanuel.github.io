@@ -8,7 +8,7 @@ var Navbar_default = Navbar;
 
 // views/components/Section.jsx
 var Section = ({ id, props }) => {
-  return /* @__PURE__ */ snapp.create("section", { id, className: "mt-12 mx-14 md:mx-16 lg:mx-44 " }, props);
+  return /* @__PURE__ */ snapp.create("section", { id, className: "mt-12 mx-8 md:mx-16 lg:mx-44 " }, props);
 };
 var Section_default = Section;
 
