@@ -1,5 +1,5 @@
 
-import snapp from "../snapp.js"
+import snapp from "../src/snapp.js"
 import Navbar from "./section/Navbar.jsx";
 import HeroSection from "./section/HeroSection.jsx";
 import AboutMe from "./section/AboutMe.jsx";

@@ -1,6 +1,11 @@
 {
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.13",
-    "tailwindcss": "^4.1.13"
+  "scripts": {
+    "dev": "npm run snapp && npm run tailwindcss",
+    "snapp": "snapp build -W",
+    "tailwindcss": "tailwindcss -i style/input.css -o style/output.css --watch",
+    "build": " snapp build --minify && tailwindcss -i style/input.css -o style/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
   }
 }

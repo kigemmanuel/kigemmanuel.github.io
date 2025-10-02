@@ -1,9 +1,9 @@
 
 /*!
- * Snapp Framework v2.0.0
+ * Snapp Framework v2.1.0
  * A lightweight JSX-like framework for vanilla JavaScript
  *
- * @version 2.0.0
+ * @version 2.1.0
  * @license MIT
  * @repository https://github.com/kigemmanuel/Snapp
  *
@@ -66,10 +66,12 @@ const snapp = (() => {
       return createFragment(flatChildren);
   }
 
-  const render = (body, App, type) => {
+  const render = (body, App, type, callBack) => {
 
-    if (!document.contains(body))
-      return console.error("ERROR: Rending to a non existing/removed element", body)
+    if (!document.contains(body)) {
+      console.error("ERROR: Rending to a non existing/removed element", body)
+      if (typeof callBack === "function") return callBack(false)
+    }
 
     if (typeof App === 'string' || typeof App === 'number' || App instanceof Element ||  App instanceof DocumentFragment) {
       DOMReady = false;
@@ -102,12 +104,12 @@ const snapp = (() => {
 
       DOMReady = true;
       document.dispatchEvent(new Event("DOM"))
+      if (typeof callBack === "function") return callBack(true);
 
     } else {
-      body.replaceChildren("Failed to render, check console")
-      console.log("Failed to render! ", typeof App, App)
+      console.error("Failed to render! ", typeof App, App)
+      if (typeof callBack === "function") return callBack(false)
     }
-
   }
 
   const remove = (items) => {
