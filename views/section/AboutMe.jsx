@@ -18,13 +18,13 @@ const AboutMe = () => {
                 <TransparentContainer className="text-red-500">
                     I develop robust server systems with NodeJS, Express, and PHP, handling everything from secure user authentication to database management that keeps applications running reliably.
                 </TransparentContainer>
-                <TransparentContainer className="text-purple-500">
+                <TransparentContainer className="text-purple-700">
                     I build practical Telegram applications that integrate payments, send real-time notifications, and make everyday tasks easier for users directly within their favorite messaging app.
                 </TransparentContainer>
-                <TransparentContainer className="text-orange-500">
+                <TransparentContainer className="text-orange-600">
                     I design efficient database systems using MongoDB and MySQL, ensuring your data stays protected with encryption while maintaining quick access and solid performance.
                 </TransparentContainer>
-                <TransparentContainer className="text-purple-500">
+                <TransparentContainer className="text-purple-700">
                     I connect apps to external services like payment processors, social platforms, and cloud tools, making sure data flows securely between different systems without breaking a sweat.
                 </TransparentContainer>
             </div>
