@@ -19,6 +19,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll; /* NOT fixed - fixed causes repaint issues */
+  
+  /* These are the magic ones: */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-@import "tailwindcss";
+/* @import "tailwindcss"; */
