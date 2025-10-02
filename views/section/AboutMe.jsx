@@ -6,9 +6,9 @@ const AboutMe = () => {
     return (
         <Section>
             <div>
-                <h3 className="text-3xl font-bold Preahvihear">Work Experience</h3>
+                <h3 className="text-3xl font-bold">Work Experience</h3>
             </div>
-            <div className="Preahvihear grid md:grid-cols-2 lg:grid-cols-3 gap-6 my-4">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 my-4">
                 <TransparentContainer className="text-red-500">
                     I build complete web applications from front to back using React, NodeJS, and Express, with a strong focus on security, speed, and creating interfaces that users actually enjoy using.
                 </TransparentContainer>

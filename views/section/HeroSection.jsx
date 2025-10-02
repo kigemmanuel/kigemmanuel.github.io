@@ -13,7 +13,7 @@ const HeroSection = () => {
               className="w-48 h-48 object-cover rounded-full md:mb-0" 
             />
           </div>
-          <div className="Preahvihear">
+          <div>
             <h2 className="text-4xl font-bold">Hi, I'm kigemmanuel</h2>
             <div>
               <p className="font-bold">Software Engineer</p>
@@ -26,7 +26,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="Preahvihear flex flex-wrap gap-4 mt-8  lg:mt-0">
+        <div className="flex flex-wrap gap-4 mt-8  lg:mt-0">
           <BtnLink2 link="" color="blue">View my stack</BtnLink2>
           <BtnLink2 link="" >Contact me</BtnLink2>
         </div>
