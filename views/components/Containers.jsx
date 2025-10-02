@@ -9,22 +9,19 @@ const TransparentContainer = ({props, className}) => {
 
 const FeactureProjectContainer = () => {
     return (
-        <div className="my-8 grid md:gap-4 md:grid-cols-2">
-            <div className="flex relative flex-col justify-between">
+        <div className="my-2 grid md:grid-cols-2">
+            <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 md:order-1 flex-col justify-between">
                 <div>
-                    <h4>Freature Project</h4>
-                    <h2>Snapp Frmowrk</h2>
+                    <h4 className="text-xs font-bold text-blue-800">Freature Project</h4>
+                    <h2 className="text-xl font-bold text-blue-500">Snapp Frmowrk</h2>
                 </div>
-                <div className="absolute inset-0 my-auto backdrop-blur-md border border-white/30 bg-white/10 shadow-xl p-5 rounded-2xl md:translate-y-4 md:w-[120%] md:h-min">
+                <div className="md:text-blue-600 md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:p-5 md:rounded-2xl md:translate-y-6 md:w-[120%] md:h-min">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
                 </div>
-                <div>
-                    Icon SVG
-                </div>
             </div>
-            <div>
+            <div className="mbl:hidden md:order-2">
                 <img 
-                    className="object-cover rounded-2xl md:w-full md:h-60"
+                    className="object-cover w-full shadow-md shadow-gray-500 rounded-2xl h-60"
                     src="/assets/snapp.png"
                     alt="Snapp Framwork"
                 />
@@ -33,4 +30,27 @@ const FeactureProjectContainer = () => {
     )
 }
 
-export { TransparentContainer, FeactureProjectContainer }
+const FeactureProjectContainerRight = () => {
+    return (
+        <div className="my-8 grid md:gap-4 md:grid-cols-2">
+            <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 flex-col md:justify-between">
+                <div className="md:text-right">
+                    <h4 className="text-xs font-bold text-red-800">Freature Project</h4>
+                    <h2 className="text-xl font-bold text-red-500">Snapp Frmowrk</h2>
+                </div>
+                <div className="md:text-red-600 md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:p-5 md:rounded-2xl md:translate-y-8 md:-translate-x-[15%] md:w-[120%] md:h-min">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
+                </div>
+            </div>
+            <div className="mbl:hidden md:order-1">
+                <img 
+                    className="object-cover shadow-md shadow-gray-500 rounded-2xl md:w-full md:h-60"
+                    src="/assets/snapp.png"
+                    alt="Snapp Framwork"
+                />
+            </div>
+        </div>
+    )
+}
+
+export { TransparentContainer, FeactureProjectContainer, FeactureProjectContainerRight }

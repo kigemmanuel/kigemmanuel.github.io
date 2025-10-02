@@ -21,7 +21,7 @@ const AboutMe = () => {
                 <TransparentContainer className="text-purple-700">
                     I build practical Telegram applications that integrate payments, send real-time notifications, and make everyday tasks easier for users directly within their favorite messaging app.
                 </TransparentContainer>
-                <TransparentContainer className="text-orange-600">
+                <TransparentContainer className="text-blue-700">
                     I design efficient database systems using MongoDB and MySQL, ensuring your data stays protected with encryption while maintaining quick access and solid performance.
                 </TransparentContainer>
                 <TransparentContainer className="text-purple-700">

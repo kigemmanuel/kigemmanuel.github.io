@@ -8,7 +8,7 @@ var Navbar_default = Navbar;
 
 // views/components/Section.jsx
 var Section = ({ id, props }) => {
-  return /* @__PURE__ */ snapp.create("section", { id, className: "mt-12 mx-8 md:mx-16 lg:mx-44 " }, props);
+  return /* @__PURE__ */ snapp.create("section", { id, className: "mt-12 mx-8 md:mx-14 mlg:bg-red-200 mlg:mx-20 lg:mx-44 " }, props);
 };
 var Section_default = Section;
 
@@ -51,10 +51,20 @@ var TransparentContainer = ({ props, className }) => {
   return /* @__PURE__ */ snapp.create("div", { className: "flex backdrop-blur-xl bg-white/15 rounded-xl items-center p-6 " + className }, /* @__PURE__ */ snapp.create("p", null, props));
 };
 var FeactureProjectContainer = () => {
-  return /* @__PURE__ */ snapp.create("div", { className: "my-8 grid md:gap-4 md:grid-cols-2" }, /* @__PURE__ */ snapp.create("div", { className: "flex relative flex-col justify-between" }, /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("h4", null, "Freature Project"), /* @__PURE__ */ snapp.create("h2", null, "Snapp Frmowrk")), /* @__PURE__ */ snapp.create("div", { className: "absolute inset-0 my-auto backdrop-blur-md border border-white/30 bg-white/10 shadow-xl p-5 rounded-2xl md:translate-y-4 md:w-[120%] md:h-min" }, "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?"), /* @__PURE__ */ snapp.create("div", null, "Icon SVG")), /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create(
+  return /* @__PURE__ */ snapp.create("div", { className: "my-2 grid md:grid-cols-2" }, /* @__PURE__ */ snapp.create("div", { className: "mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 md:order-1 flex-col justify-between" }, /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("h4", { className: "text-xs font-bold text-blue-800" }, "Freature Project"), /* @__PURE__ */ snapp.create("h2", { className: "text-xl font-bold text-blue-500" }, "Snapp Frmowrk")), /* @__PURE__ */ snapp.create("div", { className: "md:text-blue-600 md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:p-5 md:rounded-2xl md:translate-y-6 md:w-[120%] md:h-min" }, "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?")), /* @__PURE__ */ snapp.create("div", { className: "mbl:hidden md:order-2" }, /* @__PURE__ */ snapp.create(
     "img",
     {
-      className: "object-cover rounded-2xl md:w-full md:h-60",
+      className: "object-cover w-full shadow-md shadow-gray-500 rounded-2xl h-60",
+      src: "/assets/snapp.png",
+      alt: "Snapp Framwork"
+    }
+  )));
+};
+var FeactureProjectContainerRight = () => {
+  return /* @__PURE__ */ snapp.create("div", { className: "my-8 grid md:gap-4 md:grid-cols-2" }, /* @__PURE__ */ snapp.create("div", { className: "mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 flex-col md:justify-between" }, /* @__PURE__ */ snapp.create("div", { className: "md:text-right" }, /* @__PURE__ */ snapp.create("h4", { className: "text-xs font-bold text-red-800" }, "Freature Project"), /* @__PURE__ */ snapp.create("h2", { className: "text-xl font-bold text-red-500" }, "Snapp Frmowrk")), /* @__PURE__ */ snapp.create("div", { className: "md:text-red-600 md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:p-5 md:rounded-2xl md:translate-y-8 md:-translate-x-[15%] md:w-[120%] md:h-min" }, "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?")), /* @__PURE__ */ snapp.create("div", { className: "mbl:hidden md:order-1" }, /* @__PURE__ */ snapp.create(
+    "img",
+    {
+      className: "object-cover shadow-md shadow-gray-500 rounded-2xl md:w-full md:h-60",
       src: "/assets/snapp.png",
       alt: "Snapp Framwork"
     }
@@ -63,13 +73,13 @@ var FeactureProjectContainer = () => {
 
 // views/section/AboutMe.jsx
 var AboutMe = () => {
-  return /* @__PURE__ */ snapp.create(Section_default, null, /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("h3", { className: "text-3xl font-bold" }, "Work Experience")), /* @__PURE__ */ snapp.create("div", { className: "grid md:grid-cols-2 xl:grid-cols-3 gap-6 my-4" }, /* @__PURE__ */ snapp.create(TransparentContainer, { className: "text-red-500" }, "I build complete web applications from front to back using React, NodeJS, and Express, with a strong focus on security, speed, and creating interfaces that users actually enjoy using."), /* @__PURE__ */ snapp.create(TransparentContainer, { className: "text-blue-700" }, "I create sleek, responsive interfaces using React, Snapp, TypeScript, and Tailwind CSS that work flawlessly on any device while keeping the user experience smooth and accessible."), /* @__PURE__ */ snapp.create(TransparentContainer, { className: "text-red-500" }, "I develop robust server systems with NodeJS, Express, and PHP, handling everything from secure user authentication to database management that keeps applications running reliably."), /* @__PURE__ */ snapp.create(TransparentContainer, { className: "text-purple-700" }, "I build practical Telegram applications that integrate payments, send real-time notifications, and make everyday tasks easier for users directly within their favorite messaging app."), /* @__PURE__ */ snapp.create(TransparentContainer, { className: "text-orange-600" }, "I design efficient database systems using MongoDB and MySQL, ensuring your data stays protected with encryption while maintaining quick access and solid performance."), /* @__PURE__ */ snapp.create(TransparentContainer, { className: "text-purple-700" }, "I connect apps to external services like payment processors, social platforms, and cloud tools, making sure data flows securely between different systems without breaking a sweat.")));
+  return /* @__PURE__ */ snapp.create(Section_default, null, /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("h3", { className: "text-3xl font-bold" }, "Work Experience")), /* @__PURE__ */ snapp.create("div", { className: "grid md:grid-cols-2 xl:grid-cols-3 gap-6 my-4" }, /* @__PURE__ */ snapp.create(TransparentContainer, { className: "text-red-500" }, "I build complete web applications from front to back using React, NodeJS, and Express, with a strong focus on security, speed, and creating interfaces that users actually enjoy using."), /* @__PURE__ */ snapp.create(TransparentContainer, { className: "text-blue-700" }, "I create sleek, responsive interfaces using React, Snapp, TypeScript, and Tailwind CSS that work flawlessly on any device while keeping the user experience smooth and accessible."), /* @__PURE__ */ snapp.create(TransparentContainer, { className: "text-red-500" }, "I develop robust server systems with NodeJS, Express, and PHP, handling everything from secure user authentication to database management that keeps applications running reliably."), /* @__PURE__ */ snapp.create(TransparentContainer, { className: "text-purple-700" }, "I build practical Telegram applications that integrate payments, send real-time notifications, and make everyday tasks easier for users directly within their favorite messaging app."), /* @__PURE__ */ snapp.create(TransparentContainer, { className: "text-blue-700" }, "I design efficient database systems using MongoDB and MySQL, ensuring your data stays protected with encryption while maintaining quick access and solid performance."), /* @__PURE__ */ snapp.create(TransparentContainer, { className: "text-purple-700" }, "I connect apps to external services like payment processors, social platforms, and cloud tools, making sure data flows securely between different systems without breaking a sweat.")));
 };
 var AboutMe_default = AboutMe;
 
 // views/section/FeatureProject.jsx
 var FeactureProject = () => {
-  return /* @__PURE__ */ snapp.create(Section_default, null, /* @__PURE__ */ snapp.create("h2", { className: "text-3xl font-bold" }, "Featured Projects"), /* @__PURE__ */ snapp.create(FeactureProjectContainer, null));
+  return /* @__PURE__ */ snapp.create(Section_default, null, /* @__PURE__ */ snapp.create("h2", { className: "text-3xl font-bold my-4" }, "Featured Projects"), /* @__PURE__ */ snapp.create("div", { className: "flex flex-col md:gap-y-4" }, /* @__PURE__ */ snapp.create(FeactureProjectContainer, null), /* @__PURE__ */ snapp.create(FeactureProjectContainerRight, null), /* @__PURE__ */ snapp.create(FeactureProjectContainer, null), /* @__PURE__ */ snapp.create(FeactureProjectContainerRight, null)));
 };
 var FeatureProject_default = FeactureProject;
 
