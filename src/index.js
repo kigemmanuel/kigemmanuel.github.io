@@ -8,7 +8,7 @@ var Navbar_default = Navbar;
 
 // views/components/Section.jsx
 var Section = ({ id, props }) => {
-  return /* @__PURE__ */ snapp.create("section", { id, className: "mt-12 mx-8 md:mx-14 mlg:bg-red-200 mlg:mx-20 lg:mx-44 " }, props);
+  return /* @__PURE__ */ snapp.create("section", { id: id || "", className: "mt-10 mb-4 mx-8 md:mx-14 mlg:mx-20 lg:mx-44 " }, props);
 };
 var Section_default = Section;
 
@@ -27,10 +27,10 @@ var Github = () => {
   return /* @__PURE__ */ snapp.create("a", { href: "https://github.com/kigemmanuel", target: "_blank", className: "text-black hover:text-black/50 transition-colors" }, /* @__PURE__ */ snapp.create("svg", { className: "w-6 h-6", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ snapp.create("path", { d: "M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" })));
 };
 var Facebook = () => {
-  return /* @__PURE__ */ snapp.create("a", { href: "https://www.facebook.com/kigemmanuel0", target: "_blank", className: "text-blue-600 hover:text-blue-600/50 transition-colors" }, /* @__PURE__ */ snapp.create("svg", { className: "w-6 h-6", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ snapp.create("path", { d: "M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" })));
+  return /* @__PURE__ */ snapp.create("a", { href: "https://www.facebook.com/kigemmanuel0", target: "_blank", className: "text-black hover:text-black/50 transition-colors" }, /* @__PURE__ */ snapp.create("svg", { className: "w-6 h-6", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ snapp.create("path", { d: "M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" })));
 };
 var Gmail = () => {
-  return /* @__PURE__ */ snapp.create("a", { href: "mailto:kigemmanuel.dev@gmail.com", className: "text-red-600 hover:text-red-600/50 transition-colors" }, /* @__PURE__ */ snapp.create("svg", { className: "w-6 h-6", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ snapp.create("path", { d: "M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" })));
+  return /* @__PURE__ */ snapp.create("a", { href: "mailto:kigemmanuel.dev@gmail.com", className: "text-black hover:text-black/50 transition-colors" }, /* @__PURE__ */ snapp.create("svg", { className: "w-6 h-6", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ snapp.create("path", { d: "M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" })));
 };
 
 // views/section/HeroSection.jsx
@@ -42,7 +42,7 @@ var HeroSection = () => {
       alt: "kigemmanuel",
       className: "w-48 h-48 object-cover rounded-full md:mb-0"
     }
-  )), /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("h2", { className: "text-4xl font-bold" }, "Hi, I'm kigemmanuel"), /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("p", { className: "font-bold" }, "Software Engineer"), /* @__PURE__ */ snapp.create("p", { className: "mt-5 leading-5" }, "With a strong foundation in both frontend and backend development, I bring ideas to life through clean code and thoughtful design.", /* @__PURE__ */ snapp.create("br", null), /* @__PURE__ */ snapp.create("br", null), "Whether it\u2019s developing modern websites, creating custom frameworks, or automating workflows, I\u2019m passionate about crafting solutions that make a real impact.")))), /* @__PURE__ */ snapp.create("div", { className: "flex flex-wrap gap-4 mt-8  lg:mt-0" }, /* @__PURE__ */ snapp.create(BtnLink2, { link: "", color: "blue" }, "View my stack"), /* @__PURE__ */ snapp.create(BtnLink2, { link: "" }, "Contact me")), /* @__PURE__ */ snapp.create("div", { class: "flex gap-4 mt-8" }, /* @__PURE__ */ snapp.create(Github, { color: "white" }), /* @__PURE__ */ snapp.create(Facebook, { color: "blue" }), /* @__PURE__ */ snapp.create(Gmail, { color: "red" })));
+  )), /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("h2", { className: "text-4xl font-bold" }, "Hi, I'm kigemmanuel"), /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("p", { className: "font-bold" }, "Software Engineer"), /* @__PURE__ */ snapp.create("p", { className: "mt-5 leading-5" }, "With a strong foundation in both frontend and backend development, I bring ideas to life through clean code and thoughtful design.", /* @__PURE__ */ snapp.create("br", null), /* @__PURE__ */ snapp.create("br", null), "Whether it\u2019s developing modern websites, creating custom frameworks, or automating workflows, I\u2019m passionate about crafting solutions that make a real impact.")))), /* @__PURE__ */ snapp.create("div", { className: "flex flex-wrap gap-4 mt-8  lg:mt-0" }, /* @__PURE__ */ snapp.create(BtnLink2, { link: "#Tech-stack", color: "blue" }, "View my stack"), /* @__PURE__ */ snapp.create(BtnLink2, { link: "" }, "Contact me")), /* @__PURE__ */ snapp.create("div", { class: "flex gap-4 mt-8" }, /* @__PURE__ */ snapp.create(Github, { color: "white" }), /* @__PURE__ */ snapp.create(Facebook, { color: "blue" }), /* @__PURE__ */ snapp.create(Gmail, { color: "red" })));
 };
 var HeroSection_default = HeroSection;
 
@@ -70,6 +70,9 @@ var FeactureProjectContainerRight = () => {
     }
   )));
 };
+var ListTech = ({ name, data }) => {
+  return /* @__PURE__ */ snapp.create("div", { className: "space-y-6" }, /* @__PURE__ */ snapp.create("h2", { className: "text-xl font-semibold text-black" }, name), /* @__PURE__ */ snapp.create("div", { className: "flex flex-wrap gap-4 mbl:w-[100%] w-[80%]" }, data.map((tech, idx) => /* @__PURE__ */ snapp.create("div", { className: "flex items-center gap-2 w-max bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-4 py-2 transition-all hover:scale-105 hover:shadow-lg group " + tech.style }, /* @__PURE__ */ snapp.create("img", { src: tech.icon, alt: tech.name, className: "w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300" }), /* @__PURE__ */ snapp.create("span", { className: "font-medium whitespace-nowrap " + tech.textColor }, tech.name)))));
+};
 
 // views/section/AboutMe.jsx
 var AboutMe = () => {
@@ -83,9 +86,36 @@ var FeactureProject = () => {
 };
 var FeatureProject_default = FeactureProject;
 
+// views/section/Mindset.jsx
+var Mindset = () => {
+  return /* @__PURE__ */ snapp.create(Section_default, null, /* @__PURE__ */ snapp.create("div", { class: "mbl:space-y-4 md:flex" }, /* @__PURE__ */ snapp.create("div", { class: "flex gap-x-2" }, /* @__PURE__ */ snapp.create("div", { class: "shrink-0 w-12 h-12 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg flex items-center justify-center" }, /* @__PURE__ */ snapp.create("svg", { class: "w-6 h-6 shrink-0", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ snapp.create("path", { "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" }))), /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("h4", { class: "font-semibold text-blue-700" }, "Problem Solver"), /* @__PURE__ */ snapp.create("p", { class: "text-gray-700 text-sm" }, "Turning complex challenges into elegant solutions"))), /* @__PURE__ */ snapp.create("div", { class: "flex gap-x-2" }, /* @__PURE__ */ snapp.create("div", { class: "shrink-0 w-12 h-12 bg-gradient-to-r from-orange-300 to-orange-500 rounded-lg flex items-center justify-center" }, /* @__PURE__ */ snapp.create("svg", { class: "w-6 h-6 shrink-0 text-black", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ snapp.create("path", { "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", d: "M13 10V3L4 14h7v7l9-11h-7z" }))), /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("h4", { class: "font-semibold text-orange-600" }, "Digital Innovator"), /* @__PURE__ */ snapp.create("p", { class: "text-gray-700 text-sm" }, "Building the future, one line of code at a time"))), /* @__PURE__ */ snapp.create("div", { class: "flex gap-x-2" }, /* @__PURE__ */ snapp.create("div", { class: "shrink-0 w-12 h-12 bg-gradient-to-r from-purple-400 to-purple-500 rounded-lg flex items-center justify-center" }, /* @__PURE__ */ snapp.create("svg", { class: "w-6 h-6 shrink-0", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ snapp.create("path", { "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", d: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" }))), /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("h4", { class: "text-purple-700 font-semibold" }, "Continuous Learner"), /* @__PURE__ */ snapp.create("p", { class: "text-gray-700 text-sm" }, "Currently mastering Rust and expanding my toolkit")))));
+};
+var Mindset_default = Mindset;
+
+// views/section/TechStack.jsx
+var frontend = [
+  { name: "HTML5", textColor: "text-red-400", style: "hover:border-red-400/50 hover:shadow-red-400/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS3", textColor: "text-blue-400", style: "hover:border-blue-500/50 hover:shadow-blue-500/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "JavaScript", textColor: "text-yellow-400", style: "hover:border-yellow-400/50 hover:shadow-yellow-400/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "Tailwind CSS", textColor: "text-blue-400", style: "hover:border-blue-400/50 hover:shadow-blue-400/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
+  { name: "Snapp", textColor: "text-blue-800", style: "hover:border-blue-800/50 hover:shadow-blue-800/20", icon: "/assets/snapp-transparent.png" },
+  { name: "React", textColor: "text-blue-400", style: "hover:border-blue-400/50 hover:shadow-blue-400/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" }
+];
+var backend = [
+  { name: "Node.js", textColor: "text-green-400", style: "hover:border-green-400/50 hover:shadow-green-400/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "Express", textColor: "text-black-400", style: "hover:border-black/50 hover:shadow-black/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+  { name: "PHP", textColor: "text-purple-800", style: "hover:border-purple-800/50 hover:shadow-purple-800/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+  { name: "MySQL", textColor: "text-blue-400", style: "hover:border-blue-500/50 hover:shadow-blue-500/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "MongoDB", textColor: "text-green-400", style: "hover:border-green-400/50 hover:shadow-green-400/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" }
+];
+var TechStack = () => {
+  return /* @__PURE__ */ snapp.create(Section_default, { id: "Tech-stack" }, /* @__PURE__ */ snapp.create("h2", { className: "text-3xl font-bold my-4" }, "Tech Stack"), /* @__PURE__ */ snapp.create("div", { className: "md:grid mbl:space-y-8 p-8 md:grid-cols-3 rounded-xl bg-black/60 backdrop-blur-lg" }, /* @__PURE__ */ snapp.create(ListTech, { name: "Frontend", data: frontend }), /* @__PURE__ */ snapp.create("div", { className: "mbl:h-[1px] mbl:w-full mbl:mx-auto bg-black md:h-full md:w-[1px] md:mx-auto" }), /* @__PURE__ */ snapp.create(ListTech, { name: "Backend", data: backend })));
+};
+var TechStack_default = TechStack;
+
 // views/index.jsx
 var App = () => {
-  return /* @__PURE__ */ snapp.create("<>", null, /* @__PURE__ */ snapp.create(Navbar_default, null), /* @__PURE__ */ snapp.create(HeroSection_default, null), /* @__PURE__ */ snapp.create(AboutMe_default, null), /* @__PURE__ */ snapp.create(FeatureProject_default, null));
+  return /* @__PURE__ */ snapp.create("<>", null, /* @__PURE__ */ snapp.create(Navbar_default, null), /* @__PURE__ */ snapp.create(HeroSection_default, null), /* @__PURE__ */ snapp.create(AboutMe_default, null), /* @__PURE__ */ snapp.create(Mindset_default, null), /* @__PURE__ */ snapp.create(FeatureProject_default, null), /* @__PURE__ */ snapp.create(TechStack_default, null));
 };
 var SnappBody = document.querySelector("#snapp-body");
 snapp.render(SnappBody, App());

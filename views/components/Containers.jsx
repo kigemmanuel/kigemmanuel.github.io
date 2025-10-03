@@ -53,4 +53,25 @@ const FeactureProjectContainerRight = () => {
     )
 }
 
-export { TransparentContainer, FeactureProjectContainer, FeactureProjectContainerRight }
+const ListTech = ({name, data}) => {
+    return (
+        <div className='space-y-6'>
+          <h2 className='text-xl font-semibold text-black'>{name}</h2>
+          <div className='flex flex-wrap gap-4 mbl:w-[100%] w-[80%]'>
+          {data.map((tech, idx) => (
+            <div className={"flex items-center gap-2 w-max bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-4 py-2 transition-all hover:scale-105 hover:shadow-lg group " + tech.style}>
+              <img src={tech.icon} alt={tech.name} className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300" />
+              <span className={"font-medium whitespace-nowrap " + tech.textColor}>{tech.name}</span>
+            </div>
+          ))}
+          </div>
+        </div>
+    )
+}
+
+export { 
+    TransparentContainer, 
+    FeactureProjectContainer, 
+    FeactureProjectContainerRight,
+    ListTech
+ }

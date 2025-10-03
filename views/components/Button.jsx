@@ -17,7 +17,7 @@ const BtnLink2 = ({props, link, color = "black"}) => {
     };
 
     return (
-        <a href={link} class={colorMap[color]+ " text-white border rounded px-10 py-3 text-sm cursor-pointer hover:translate-x-[2px] hover:translate-y-[2px]"}>
+        <a href={link} class={colorMap[color] + " text-white border rounded px-10 py-3 text-sm cursor-pointer hover:translate-x-[2px] hover:translate-y-[2px]"}>
             {props}
         </a>
     )
