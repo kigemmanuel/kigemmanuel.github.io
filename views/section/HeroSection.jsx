@@ -27,8 +27,8 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-wrap gap-4 mt-8  lg:mt-0">
-          <BtnLink2 link="#Tech-stack" color="blue">View my stack</BtnLink2>
-          <BtnLink2 link="" >Contact me</BtnLink2>
+          <BtnLink2 link="#Tech-stack" label="Tech Stack" color="blue">View my stack</BtnLink2>
+          <BtnLink2 link="" label="Mail Address" >Contact me</BtnLink2>
         </div>
 
         <div class="flex gap-4 mt-8">

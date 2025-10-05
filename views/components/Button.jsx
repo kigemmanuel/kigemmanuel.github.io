@@ -8,7 +8,7 @@ const BtnLink = ({props, link, className}) => {
     )
 }
 
-const BtnLink2 = ({props, link, color = "black"}) => {
+const BtnLink2 = ({props, link, label, color = "black"}) => {
 
     const colorMap = {
         blue: "bg-blue-500 border-blue-500 shadow-[4px_4px_0_0_theme('colors.white'),4px_4px_0_1px_theme('colors.blue.500')]",
@@ -17,7 +17,7 @@ const BtnLink2 = ({props, link, color = "black"}) => {
     };
 
     return (
-        <a href={link} class={colorMap[color] + " text-white border rounded px-10 py-3 text-sm cursor-pointer hover:translate-x-[2px] hover:translate-y-[2px]"}>
+        <a href={link} aria-label={label} class={colorMap[color] + " text-white border rounded px-10 py-3 text-sm cursor-pointer hover:translate-x-[2px] hover:translate-y-[2px]"}>
             {props}
         </a>
     )

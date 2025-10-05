@@ -12,8 +12,8 @@ const FeactureProjectContainer = () => {
         <article className="my-2 grid md:grid-cols-2">
             <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 md:order-1 flex-col justify-between">
                 <div>
-                    <h4 className="text-xs font-bold text-blue-800">Freature Project</h4>
-                    <h2 className="text-xl font-bold text-blue-500">Snapp Frmowrk</h2>
+                    <h2 className="text-xs font-bold text-blue-800">Freature Project</h2>
+                    <h4 className="text-xl font-bold text-blue-500">Snapp Frmowrk</h4>
                 </div>
                 <div className="md:text-blue-600 md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:p-5 md:rounded-2xl md:translate-y-6 md:w-[120%] md:h-min">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
@@ -36,8 +36,8 @@ const FeactureProjectContainerRight = () => {
         <article className="my-8 grid md:gap-4 md:grid-cols-2">
             <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 flex-col md:justify-between">
                 <div className="md:text-right">
-                    <h4 className="text-xs font-bold text-red-800">Freature Project</h4>
-                    <h2 className="text-xl font-bold text-red-500">Snapp Frmowrk</h2>
+                    <h2 className="text-xs font-bold text-red-800">Freature Project</h2>
+                    <h4 className="text-xl font-bold text-red-500">Snapp Frmowrk</h4>
                 </div>
                 <div className="md:text-red-600 md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:p-5 md:rounded-2xl md:translate-y-8 md:-translate-x-[15%] md:w-[120%] md:h-min">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
