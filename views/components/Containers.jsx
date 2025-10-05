@@ -9,7 +9,7 @@ const TransparentContainer = ({props, className}) => {
 
 const FeactureProjectContainer = () => {
     return (
-        <div className="my-2 grid md:grid-cols-2">
+        <article className="my-2 grid md:grid-cols-2">
             <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 md:order-1 flex-col justify-between">
                 <div>
                     <h4 className="text-xs font-bold text-blue-800">Freature Project</h4>
@@ -26,13 +26,13 @@ const FeactureProjectContainer = () => {
                     alt="Snapp Framwork"
                 />
             </div>
-        </div>
+        </article>
     )
 }
 
 const FeactureProjectContainerRight = () => {
     return (
-        <div className="my-8 grid md:gap-4 md:grid-cols-2">
+        <article className="my-8 grid md:gap-4 md:grid-cols-2">
             <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 flex-col md:justify-between">
                 <div className="md:text-right">
                     <h4 className="text-xs font-bold text-red-800">Freature Project</h4>
@@ -49,7 +49,7 @@ const FeactureProjectContainerRight = () => {
                     alt="Snapp Framwork"
                 />
             </div>
-        </div>
+        </article>
     )
 }
 
@@ -60,8 +60,8 @@ const ListTech = ({name, data}) => {
           <div className='flex flex-wrap gap-4 mbl:w-[100%] w-[80%]'>
           {data.map((tech, idx) => (
             <div className={"flex items-center gap-2 w-max bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-4 py-2 transition-all hover:scale-105 hover:shadow-lg group " + tech.style}>
-              <img src={tech.icon} alt={tech.name} className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300" />
-              <span className={"font-medium whitespace-nowrap " + tech.textColor}>{tech.name}</span>
+              <img src={tech.icon} alt={tech.name} loading="lazy" className="w-6 h-6 mbl:w-4 mbl:h-4 object-contain group-hover:scale-110 transition-transform duration-300" />
+              <span className={"mbl:text-sm font-medium whitespace-nowrap " + tech.textColor}>{tech.name}</span>
             </div>
           ))}
           </div>

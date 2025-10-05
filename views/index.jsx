@@ -10,12 +10,16 @@ import TechStack from "./section/TechStack.jsx";
 const App = () => {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <AboutMe />
-      <Mindset />
-      <FeactureProject />
-      <TechStack />
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <HeroSection />
+        <AboutMe />
+        <Mindset />
+        <FeactureProject />
+        <TechStack />
+      </main>
     </>
   )
 }

@@ -34,7 +34,7 @@ const TechStack = () => {
           <h2 className="text-3xl font-bold my-4">Tech Stack</h2>
           <div className='md:grid mbl:space-y-8 p-8 md:grid-cols-3 rounded-xl bg-black/60 backdrop-blur-lg'>
             <ListTech name="Frontend" data={frontend} />
-            <div className='mbl:h-[1px] mbl:w-full mbl:mx-auto bg-black md:h-full md:w-[1px] md:mx-auto'></div>
+            <div className='mbl:h-[1px] mbl:w-full mbl:mx-auto bg-black md:h-full md:w-[1px] md:mx-auto'></div> {/* line */}
             <ListTech name="Backend" data={backend} />
           </div>
         </Section>

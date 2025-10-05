@@ -13,7 +13,7 @@ const HeroSection = () => {
               className="w-48 h-48 object-cover rounded-full md:mb-0" 
             />
           </div>
-          <div>
+          <article>
             <h2 className="text-4xl font-bold">Hi, I'm kigemmanuel</h2>
             <div>
               <p className="font-bold">Software Engineer</p>
@@ -23,7 +23,7 @@ const HeroSection = () => {
                 Whether it’s developing modern websites, creating custom frameworks, or automating workflows, I’m passionate about crafting solutions that make a real impact.
               </p>
             </div>
-          </div>
+          </article>
         </div>
 
         <div className="flex flex-wrap gap-4 mt-8  lg:mt-0">
