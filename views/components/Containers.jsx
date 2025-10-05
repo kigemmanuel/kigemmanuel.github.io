@@ -36,7 +36,7 @@ const FeactureProjectContainerRight = () => {
         <article className="my-8 grid md:gap-4 md:grid-cols-2">
             <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 flex-col md:justify-between">
                 <div className="md:text-right">
-                    <h2 className="text-xs font-bold text-red-800">Freature Project</h2>
+                    <h3 className="text-xs font-bold text-red-800">Freature Project</h3>
                     <h4 className="text-xl font-bold text-red-500">Snapp Frmowrk</h4>
                 </div>
                 <div className="md:text-red-600 md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:p-5 md:rounded-2xl md:translate-y-8 md:-translate-x-[15%] md:w-[120%] md:h-min">
@@ -58,7 +58,7 @@ const FeactureProjectContainerRight = () => {
 const ListTech = ({name, data}) => {
     return (
         <div className='space-y-6'>
-          <h2 className='text-xl font-semibold text-black'>{name}</h2>
+          <h3 className='text-xl font-semibold text-black'>{name}</h3>
           <div className='flex flex-wrap gap-4 mbl:w-[100%] w-[80%]'>
           {data.map((tech, idx) => (
             <div className={"flex items-center gap-2 w-max bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-4 py-2 transition-all hover:scale-105 hover:shadow-lg group " + tech.style}>
