@@ -55,8 +55,9 @@ var FeactureProjectContainer = () => {
     "img",
     {
       className: "object-cover w-full shadow-md shadow-gray-500 rounded-2xl h-60",
-      src: "/assets/snapp.png",
-      alt: "Snapp Framwork"
+      src: "/assets/snapp.webp",
+      alt: "Snapp Framwork",
+      loading: "lazy"
     }
   )));
 };
@@ -65,8 +66,9 @@ var FeactureProjectContainerRight = () => {
     "img",
     {
       className: "object-cover shadow-md shadow-gray-500 rounded-2xl md:w-full md:h-60",
-      src: "/assets/snapp.png",
-      alt: "Snapp Framwork"
+      src: "/assets/snapp.webp",
+      alt: "Snapp Framwork",
+      loading: "lazy"
     }
   )));
 };
@@ -98,7 +100,7 @@ var frontend = [
   { name: "CSS3", textColor: "text-blue-400", style: "hover:border-blue-500/50 hover:shadow-blue-500/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { name: "JavaScript", textColor: "text-yellow-400", style: "hover:border-yellow-400/50 hover:shadow-yellow-400/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { name: "Tailwind CSS", textColor: "text-blue-400", style: "hover:border-blue-400/50 hover:shadow-blue-400/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
-  { name: "Snapp", textColor: "text-blue-800", style: "hover:border-blue-800/50 hover:shadow-blue-800/20", icon: "/assets/snapp-transparent.png" },
+  { name: "Snapp", textColor: "text-blue-800", style: "hover:border-blue-800/50 hover:shadow-blue-800/20", icon: "/assets/snapp-transparent.webp" },
   { name: "React", textColor: "text-blue-400", style: "hover:border-blue-400/50 hover:shadow-blue-400/20", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" }
 ];
 var backend = [

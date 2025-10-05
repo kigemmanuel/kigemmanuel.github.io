@@ -22,8 +22,9 @@ const FeactureProjectContainer = () => {
             <div className="mbl:hidden md:order-2">
                 <img 
                     className="object-cover w-full shadow-md shadow-gray-500 rounded-2xl h-60"
-                    src="/assets/snapp.png"
+                    src="/assets/snapp.webp"
                     alt="Snapp Framwork"
+                    loading="lazy"
                 />
             </div>
         </article>
@@ -45,8 +46,9 @@ const FeactureProjectContainerRight = () => {
             <div className="mbl:hidden md:order-1">
                 <img 
                     className="object-cover shadow-md shadow-gray-500 rounded-2xl md:w-full md:h-60"
-                    src="/assets/snapp.png"
+                    src="/assets/snapp.webp"
                     alt="Snapp Framwork"
+                    loading="lazy"
                 />
             </div>
         </article>
