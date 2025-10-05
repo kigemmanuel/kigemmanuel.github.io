@@ -4,7 +4,7 @@
 
 .preahvihear-regular {
   font-family: "Preahvihear", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -278,6 +278,43 @@ body.my-background-dark .blob-4 {
   75% { transform: translateX(-50%) translate(24px, 16px) scale(1.04); }
 }
 
+/* Custom Scrollbar */
+.scroll-bar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s ease;
+}
+
+.scroll-bar:hover {
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.scroll-bar:hover::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.scroll-bar::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 1);
+}
 
 body, html {
   overflow-y: auto;

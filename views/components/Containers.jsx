@@ -12,11 +12,13 @@ const FeactureProjectContainer = () => {
         <article className="my-2 grid md:grid-cols-2">
             <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 md:order-1 flex-col justify-between">
                 <div>
-                    <h2 className="text-xs font-bold text-blue-800">Freature Project</h2>
-                    <h4 className="text-xl font-bold text-blue-500">Snapp Frmowrk</h4>
+                    <h2 className="text-xs font-bold text-black">Freature Project</h2>
+                    <h4 className="text-xl font-bold text-black">Snapp Frmowrk</h4>
                 </div>
-                <div className="md:text-blue-600 md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:p-5 md:rounded-2xl md:translate-y-6 md:w-[120%] md:h-min">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
+                <div className="text-black md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border overflow-hidden md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:w-[120%] md:h-min">
+                    <div className="font-light mbl:max-h-48 md:h-28 lg:h-32 pr-2 scroll-bar overflow-y-auto">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
+                    </div>
                 </div>
             </div>
             <div className="mbl:hidden md:order-2">
@@ -36,11 +38,15 @@ const FeactureProjectContainerRight = () => {
         <article className="my-8 grid md:gap-4 md:grid-cols-2">
             <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 flex-col md:justify-between">
                 <div className="md:text-right">
-                    <h3 className="text-xs font-bold text-red-800">Freature Project</h3>
-                    <h4 className="text-xl font-bold text-red-500">Snapp Frmowrk</h4>
+                    <h3 className="text-xs font-bold text-black">Freature Project</h3>
+                    <h4 className="text-xl font-bold text-black">Snapp Frmowrk</h4>
                 </div>
-                <div className="md:text-red-600 md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:p-5 md:rounded-2xl md:translate-y-8 md:-translate-x-[15%] md:w-[120%] md:h-min">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
+                <div className="text-black md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:-translate-x-[15%] md:w-[120%] md:h-min">
+                    <div className="mbl:max-h-48 md:h-28 lg:h-32 pr-2 scroll-bar overflow-y-auto">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
+                    </div>
                 </div>
             </div>
             <div className="mbl:hidden md:order-1">
@@ -57,17 +63,17 @@ const FeactureProjectContainerRight = () => {
 
 const ListTech = ({name, data}) => {
     return (
-        <div className='space-y-6'>
-          <h3 className='text-xl font-semibold text-black'>{name}</h3>
+        <section className='space-y-6'>
+          <h3 className='text-xl text-black'>{name}</h3>
           <div className='flex flex-wrap gap-4 mbl:w-[100%] w-[80%]'>
           {data.map((tech, idx) => (
             <div className={"flex items-center gap-2 w-max bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-4 py-2 transition-all hover:scale-105 hover:shadow-lg group " + tech.style}>
-              <img src={tech.icon} alt={tech.name} loading="lazy" className="w-6 h-6 mbl:w-4 mbl:h-4 object-contain group-hover:scale-110 transition-transform duration-300" />
-              <span className={"mbl:text-sm font-medium whitespace-nowrap " + tech.textColor}>{tech.name}</span>
+              <img src={tech.icon} alt={tech.name} loading="lazy" className="w-5 h-5 mbl:w-4 mbl:h-4 object-contain group-hover:scale-110 transition-transform duration-300" />
+              <span className={"text-sm font-medium whitespace-nowrap " + tech.textColor}>{tech.name}</span>
             </div>
           ))}
           </div>
-        </div>
+        </section>
     )
 }
 
