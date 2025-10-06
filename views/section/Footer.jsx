@@ -14,7 +14,7 @@ const Footer = () => {
                 </div>
                 <nav className="space-y-3">
                     <h2 className="text-md text-gray-300">Quick Links</h2>
-                    <ul className="text-sm space-y-1 text-blue-600">
+                    <ul className="text-sm space-y-2 text-blue-600">
                         <li><a href="#Feature-project">Feature project</a></li>
                         <li><a href="#Tech-stack">Tech stack</a></li>
                     </ul>

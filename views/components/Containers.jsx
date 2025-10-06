@@ -16,7 +16,7 @@ const FeactureProjectContainer = () => {
                     <h4 className="text-xl font-bold text-slate-900">Snapp Frmowrk</h4>
                 </div>
                 <div className="text-black md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border overflow-hidden md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:w-[120%] md:h-min">
-                    <div className="font-light mbl:max-h-48 md:h-28 lg:h-32 pr-2 scroll-bar overflow-y-auto">
+                    <div className="font-light pr-2 line-clamp-4">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const FeactureProjectContainerRight = () => {
                     <h4 className="text-xl font-bold text-slate-900">Snapp Frmowrk</h4>
                 </div>
                 <div className="text-black md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:-translate-x-[15%] md:w-[120%] md:h-min">
-                    <div className="mbl:max-h-48 md:h-28 lg:h-32 pr-2 scroll-bar overflow-y-auto">
+                    <div className="pr-2 line-clamp-4">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?

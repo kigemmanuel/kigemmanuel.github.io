@@ -131,6 +131,173 @@ body.my-background-dark .blob-4 {
   
   body.my-background-light .blob-1,
   body.my-background-dark .blob-1 {
+    width: 420px;
+    height: 420px;
+    left: -10%;
+    top: 20%;
+  }
+  
+  body.my-background-light .blob-2,
+  body.my-background-dark .blob-2 {
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: auto;
+    right: -10%;
+    transform: translateY(-50%);
+  }
+  
+  body.my-background-light .blob-3,
+  body.my-background-dark .blob-3 {
+    width: 450px;
+    height: 450px;
+    right: auto;
+    left: -10%;
+    top: 70%;
+  }
+  
+  body.my-background-light .blob-4,
+  body.my-background-dark .blob-4 {
+    width: 340px;
+    height: 340px;
+    bottom: 5%;
+    display: none;
+  }
+}
+
+/* MOBILE RESPONSIVE - Phones */
+@media (max-width: 640px) {
+  .gradient-blob {
+    filter: blur(40px);
+  }
+  
+  /* Blob 1 - Top left - 20% from top */
+  body.my-background-light .blob-1,
+  body.my-background-dark .blob-1 {
+    width: 320px;
+    height: 320px;
+    left: -15%;
+    top: 20%;
+  }
+  
+  /* Blob 2 - Center right - 50% from top */
+  body.my-background-light .blob-2,
+  body.my-background-dark .blob-2 {
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: auto;
+    right: -15%;
+    transform: translateY(-50%);
+  }
+  
+  /* Blob 3 - Bottom left - 70% from top */
+  body.my-background-light .blob-3,
+  body.my-background-dark .blob-3 {
+    width: 350px;
+    height: 350px;
+    right: auto;
+    left: -15%;
+    top: 70%;
+  }
+  
+  /* Hide blob 4 on mobile */
+  body.my-background-light .blob-4,
+  body.my-background-dark .blob-4 {
+    display: none;
+  }
+}
+
+/* MOBILE RESPONSIVE - Small phones */
+@media (max-width: 380px) {
+  .gradient-blob {
+    filter: blur(35px);
+  }
+  
+  /* Blob 1 - Top left - 20% from top */
+  body.my-background-light .blob-1,
+  body.my-background-dark .blob-1 {
+    width: 240px;
+    height: 240px;
+    left: -20%;
+    top: 20%;
+  }
+  
+  /* Blob 2 - Center right - 50% from top */
+  body.my-background-light .blob-2,
+  body.my-background-dark .blob-2 {
+    width: 220px;
+    height: 220px;
+    top: 50%;
+    left: auto;
+    right: -20%;
+    transform: translateY(-50%);
+  }
+  
+  /* Blob 3 - Bottom left - 70% from top */
+  body.my-background-light .blob-3,
+  body.my-background-dark .blob-3 {
+    width: 260px;
+    height: 260px;
+    right: auto;
+    left: -20%;
+    top: 70%;
+  }
+  
+  /* Hide blob 4 on mobile */
+  body.my-background-light .blob-4,
+  body.my-background-dark .blob-4 {
+    display: none;
+  }
+}
+
+/* Animations - Slow, subtle, random movement */
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(30px, -25px) scale(1.03); }
+  50% { transform: translate(-20px, 35px) scale(0.98); }
+  75% { transform: translate(25px, 15px) scale(1.02); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translateX(-50%) translate(0, 0) scale(1); }
+  33% { transform: translateX(-50%) translate(-25px, 20px) scale(1.04); }
+  66% { transform: translateX(-50%) translate(30px, 25px) scale(0.97); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  30% { transform: translate(-35px, 30px) scale(1.05); }
+  60% { transform: translate(20px, -20px) scale(0.96); }
+}
+
+@keyframes float4 {
+  0%, 100% { transform: translateX(-50%) translate(0, 0) scale(1); }
+  25% { transform: translateX(-50%) translate(28px, -18px) scale(1.03); }
+  50% { transform: translateX(-50%) translate(-22px, 12px) scale(0.98); }
+  75% { transform: translateX(-50%) translate(24px, 16px) scale(1.04); }
+}
+
+/* Bottom center - Rich Amber */
+body.my-background-dark .blob-4 {
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, #FBBF24 0%, #F59E0B 40%, #D97706 70%, transparent 100%);
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.4;
+  animation: float4 42s ease-in-out infinite;
+}
+
+/* MOBILE RESPONSIVE - Tablets and below */
+@media (max-width: 1024px) {
+  .gradient-blob {
+    filter: blur(50px);
+  }
+  
+  body.my-background-light .blob-1,
+  body.my-background-dark .blob-1 {
     width: 350px;
     height: 350px;
     left: -10%;
