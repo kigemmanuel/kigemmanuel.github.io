@@ -11,7 +11,7 @@ const Mindset = () => {
                     </div>
                     <div>
                         <h3 class="font-semibold text-blue-700">Problem Solver</h3>
-                        <p class="text-gray-700 text-sm">Turning complex challenges into elegant solutions</p>
+                        <p class="text-slate-700 text-sm">Turning complex challenges into elegant solutions</p>
                     </div>
                 </div>
                 <div class="flex gap-x-2">
@@ -20,7 +20,7 @@ const Mindset = () => {
                     </div>
                     <div>
                         <h3 class="font-semibold text-orange-600">Digital Innovator</h3>
-                        <p class="text-gray-700 text-sm">Building the future, one line of code at a time</p>
+                        <p class="text-slate-700 text-sm">Building the future, one line of code at a time</p>
                     </div>
                 </div>
                 <div class="flex gap-x-2">
@@ -29,7 +29,7 @@ const Mindset = () => {
                     </div>
                     <div>
                         <h3 class="text-purple-700 font-semibold">Continuous Learner</h3>
-                        <p class="text-gray-700 text-sm">Currently mastering Rust and expanding my toolkit</p>
+                        <p class="text-slate-700 text-sm">Currently mastering Rust and expanding my toolkit</p>
                     </div>
                 </div>
             </div>
