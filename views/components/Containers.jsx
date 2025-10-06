@@ -12,8 +12,8 @@ const FeactureProjectContainer = () => {
         <article className="my-2 grid md:grid-cols-2">
             <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 md:order-1 flex-col justify-between">
                 <div>
-                    <h2 className="text-xs font-bold text-black">Freature Project</h2>
-                    <h4 className="text-xl font-bold text-black">Snapp Frmowrk</h4>
+                    <h2 className="text-xs font-bold text-slate-700">Freature Project</h2>
+                    <h4 className="text-xl font-bold text-slate-900">Snapp Frmowrk</h4>
                 </div>
                 <div className="text-black md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border overflow-hidden md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:w-[120%] md:h-min">
                     <div className="font-light mbl:max-h-48 md:h-28 lg:h-32 pr-2 scroll-bar overflow-y-auto">
@@ -38,8 +38,8 @@ const FeactureProjectContainerRight = () => {
         <article className="my-8 grid md:gap-4 md:grid-cols-2">
             <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 flex-col md:justify-between">
                 <div className="md:text-right">
-                    <h3 className="text-xs font-bold text-black">Freature Project</h3>
-                    <h4 className="text-xl font-bold text-black">Snapp Frmowrk</h4>
+                    <h3 className="text-xs font-bold text-slate-700">Freature Project</h3>
+                    <h4 className="text-xl font-bold text-slate-900">Snapp Frmowrk</h4>
                 </div>
                 <div className="text-black md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:-translate-x-[15%] md:w-[120%] md:h-min">
                     <div className="mbl:max-h-48 md:h-28 lg:h-32 pr-2 scroll-bar overflow-y-auto">

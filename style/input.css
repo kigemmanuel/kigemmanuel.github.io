@@ -316,7 +316,6 @@ body.my-background-dark .blob-4 {
   background: rgba(0, 0, 0, 1);
 }
 
-body, html {
-  overflow-y: auto;
+html {
   scroll-behavior: smooth; /* fallback in case Tailwind class is missing */
 }

@@ -1,5 +1,5 @@
 import Section from "../components/Section"
-import { BtnLink, BtnLink2 } from "../components/Button"
+import { BtnLink } from "../components/Button"
 import { Github, Facebook, Gmail } from "../components/Socials"
 
 const HeroSection = () => {
@@ -13,10 +13,10 @@ const HeroSection = () => {
               className="w-48 h-48 object-cover rounded-full md:mb-0" 
             />
           </div>
-          <article>
-            <h1 className="text-4xl font-bold">Hi, I'm kigemmanuel</h1>
+          <article className="text-slate-900">
+            <h1 className="text-4xl font-bold text-slate-900">Hi, I'm kigemmanuel</h1>
             <div>
-              <p className="font-bold">Software Engineer</p>
+              <p className="font-bold text-slate-500">Software Engineer</p>
               <p className="mt-5 leading-5">
                 With a strong foundation in both frontend and backend development, I bring ideas to life through clean code and thoughtful design.
                 <br /><br />
@@ -27,8 +27,8 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-wrap gap-4 mt-8  lg:mt-0">
-          <BtnLink2 link="#Tech-stack" label="Tech Stack" color="blue">View my stack</BtnLink2>
-          <BtnLink2 link="" label="Mail Address" >Contact me</BtnLink2>
+          <BtnLink link="#Tech-stack" label="Tech Stack" color="blue">View my stack</BtnLink>
+          <BtnLink link="" label="Mail Address" color="slate">Contact me</BtnLink>
         </div>
 
         <div class="flex gap-4 mt-8">

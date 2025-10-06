@@ -68,13 +68,14 @@ import Section from '../components/Section'
 const TechStack = () => {
     return (
         <Section id="Tech-stack">
-          <h2 className="text-3xl font-bold my-4">Tech Stack</h2>
-          <div className='md:grid mbl:space-y-8 p-8 px-6 md:grid-cols-3 rounded-xl bg-black/60 backdrop-blur-lg'>
+          <h2 className="text-3xl font-bold my-4 text-slate-900">Tech Stack</h2>
+          <div className='md:grid mbl:space-y-8 p-4 pt-8 md:grid-cols-3 rounded-xl bg-black/60 backdrop-blur-lg'>
+            
             <ListTech name="Frontend" data={frontend} />
             <div className='mbl:h-[1px] mbl:w-full mbl:mx-auto bg-black md:h-full md:w-[1px] md:mx-auto'></div> {/* line */}
             <ListTech name="Backend" data={backend} />
             
-            <div className='md:mt-8 w-full col-span-3 space-y-4 bg-black/70 p-4 py-6 rounded-lg'>
+            <div className='md:mt-8 w-full col-span-3 space-y-4 bg-black/70 p-4 py-6 rounded-xl'>
               <section className='space-y-2'>
                 <h3 className='text-white'>Tools</h3>
                 <div className='flex gap-4 flex-wrap'>

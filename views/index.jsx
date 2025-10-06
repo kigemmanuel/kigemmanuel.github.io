@@ -6,6 +6,7 @@ import AboutMe from "./section/AboutMe.jsx";
 import FeactureProject from "./section/FeatureProject.jsx";
 import Mindset from "./section/Mindset.jsx";
 import TechStack from "./section/TechStack.jsx";
+import Footer from "./section/Footer.jsx";
 
 const App = () => {
   return (
@@ -20,6 +21,9 @@ const App = () => {
         <FeactureProject />
         <TechStack />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
