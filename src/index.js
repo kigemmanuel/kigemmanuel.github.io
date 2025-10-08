@@ -42,7 +42,7 @@ var HeroSection = () => {
       alt: "kigemmanuel",
       class: "w-48 h-48 object-cover rounded-full md:mb-0"
     }
-  )), /* @__PURE__ */ snapp.create("article", { class: "text-slate-900" }, /* @__PURE__ */ snapp.create("h1", { class: "text-4xl font-bold text-slate-900" }, "Hi, I'm kigemmanuel"), /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("p", { class: "font-bold text-slate-700" }, "Software Engineer"), /* @__PURE__ */ snapp.create("p", { class: "mt-5 leading-5" }, "With a strong foundation in both frontend and backend development, I bring ideas to life through clean code and thoughtful design.", /* @__PURE__ */ snapp.create("br", null), /* @__PURE__ */ snapp.create("br", null), "Whether it\u2019s developing modern websites, creating custom frameworks, or automating workflows, I\u2019m passionate about crafting solutions that make a real impact.")))), /* @__PURE__ */ snapp.create("div", { className: "flex flex-wrap gap-4 mt-8  lg:mt-0" }, /* @__PURE__ */ snapp.create(BtnLink, { link: "#Tech-stack", label: "Tech Stack", color: "blue" }, "View my stack"), /* @__PURE__ */ snapp.create(BtnLink, { link: "mailto:kigemmanuel.dev@gmail.com", label: "Mail Address", color: "slate" }, "Contact me")), /* @__PURE__ */ snapp.create("div", { class: "flex gap-4 mt-8" }, /* @__PURE__ */ snapp.create(Github, { color: "white" }), /* @__PURE__ */ snapp.create(Facebook, { color: "blue" }), /* @__PURE__ */ snapp.create(Gmail, { color: "red" })));
+  )), /* @__PURE__ */ snapp.create("article", { class: "text-slate-900" }, /* @__PURE__ */ snapp.create("h1", { class: "text-4xl font-bold text-slate-900" }, "Hi, I'm kigemmanuel"), /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("p", { class: "font-bold text-slate-700" }, "Software Engineer"), /* @__PURE__ */ snapp.create("p", { class: "mt-5 leading-5" }, "With a strong foundation in both frontend and backend development, I bring ideas to life through clean code and thoughtful design."), /* @__PURE__ */ snapp.create("p", { class: "mt-5 leading-5" }, "Whether it\u2019s developing modern websites, creating custom frameworks, or automating workflows, I\u2019m passionate about crafting solutions that make a real impact.")))), /* @__PURE__ */ snapp.create("div", { className: "flex flex-wrap gap-4 mt-8  lg:mt-0" }, /* @__PURE__ */ snapp.create(BtnLink, { link: "#Tech-stack", label: "Tech Stack", color: "blue" }, "View my stack"), /* @__PURE__ */ snapp.create(BtnLink, { link: "mailto:kigemmanuel.dev@gmail.com", label: "Mail Address", color: "slate" }, "Contact me")), /* @__PURE__ */ snapp.create("div", { class: "flex gap-4 mt-8" }, /* @__PURE__ */ snapp.create(Github, { color: "white" }), /* @__PURE__ */ snapp.create(Facebook, { color: "blue" }), /* @__PURE__ */ snapp.create(Gmail, { color: "red" })));
 };
 var HeroSection_default = HeroSection;
 
@@ -50,24 +50,50 @@ var HeroSection_default = HeroSection;
 var TransparentContainer = ({ props, className }) => {
   return /* @__PURE__ */ snapp.create("div", { className: "flex backdrop-blur-xl bg-white/15 rounded-xl items-center p-6 " + className }, /* @__PURE__ */ snapp.create("p", null, props));
 };
-var FeactureProjectContainer = () => {
-  return /* @__PURE__ */ snapp.create("article", { className: "my-2 grid md:grid-cols-2" }, /* @__PURE__ */ snapp.create("div", { className: "mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 md:order-1 flex-col justify-between" }, /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("h2", { className: "text-xs font-bold text-slate-700" }, "Freature Project"), /* @__PURE__ */ snapp.create("h4", { className: "text-xl font-bold text-slate-900" }, "Snapp Frmowrk")), /* @__PURE__ */ snapp.create("div", { className: "text-black md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border overflow-hidden md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:w-[120%] md:h-min" }, /* @__PURE__ */ snapp.create("div", { className: "font-light pr-2 line-clamp-4" }, "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?"))), /* @__PURE__ */ snapp.create("div", { className: "mbl:hidden md:order-2" }, /* @__PURE__ */ snapp.create(
+var FeactureProjectContainer = ({ data, showPopup, popupInfo }) => {
+  return /* @__PURE__ */ snapp.create("article", { className: "my-2 grid md:grid-cols-2" }, /* @__PURE__ */ snapp.create("div", { className: "mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 md:order-1 flex-col justify-between" }, /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create("h2", { className: "text-xs font-bold text-slate-700" }, "Freature Project"), /* @__PURE__ */ snapp.create("h4", { className: "text-xl font-bold text-slate-900" }, data.name)), /* @__PURE__ */ snapp.create("div", { className: "text-black md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border overflow-hidden md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:w-[120%] md:h-min" }, /* @__PURE__ */ snapp.create("div", { className: "font-light pr-2 line-clamp-4  mbl:line-clamp-6" }, data.description), /* @__PURE__ */ snapp.create(
+    "button",
+    {
+      className: "text-blue-700",
+      onClick: () => {
+        popupInfo.update({
+          head: data.name,
+          message: data.description
+        });
+        showPopup.update(true);
+      }
+    },
+    "see more"
+  ))), /* @__PURE__ */ snapp.create("div", { className: "mbl:hidden md:order-2" }, /* @__PURE__ */ snapp.create(
     "img",
     {
       className: "object-cover w-full shadow-md shadow-gray-500 rounded-2xl h-60",
-      src: "/assets/snapp.webp",
-      alt: "Snapp Framwork",
+      src: data.icon,
+      alt: data.name,
       loading: "lazy"
     }
   )));
 };
-var FeactureProjectContainerRight = () => {
-  return /* @__PURE__ */ snapp.create("article", { className: "my-8 grid md:gap-4 md:grid-cols-2" }, /* @__PURE__ */ snapp.create("div", { className: "mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 flex-col md:justify-between" }, /* @__PURE__ */ snapp.create("div", { className: "md:text-right" }, /* @__PURE__ */ snapp.create("h3", { className: "text-xs font-bold text-slate-700" }, "Freature Project"), /* @__PURE__ */ snapp.create("h4", { className: "text-xl font-bold text-slate-900" }, "Snapp Frmowrk")), /* @__PURE__ */ snapp.create("div", { className: "text-black md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:-translate-x-[15%] md:w-[120%] md:h-min" }, /* @__PURE__ */ snapp.create("div", { className: "pr-2 line-clamp-4" }, "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?"))), /* @__PURE__ */ snapp.create("div", { className: "mbl:hidden md:order-1" }, /* @__PURE__ */ snapp.create(
+var FeactureProjectContainerRight = ({ data, showPopup, popupInfo }) => {
+  return /* @__PURE__ */ snapp.create("article", { className: "my-8 grid md:gap-4 md:grid-cols-2" }, /* @__PURE__ */ snapp.create("div", { className: "mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 flex-col md:justify-between" }, /* @__PURE__ */ snapp.create("div", { className: "md:text-right" }, /* @__PURE__ */ snapp.create("h3", { className: "text-xs font-bold text-slate-700" }, "Freature Project"), /* @__PURE__ */ snapp.create("h4", { className: "text-xl font-bold text-slate-900" }, data.name)), /* @__PURE__ */ snapp.create("div", { className: "text-black md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:-translate-x-[15%] md:w-[120%] md:h-min" }, /* @__PURE__ */ snapp.create("div", { className: "font-light pr-2 line-clamp-3 mbl:line-clamp-6" }, data.description), /* @__PURE__ */ snapp.create(
+    "button",
+    {
+      className: "text-blue-700",
+      onClick: () => {
+        popupInfo.update({
+          head: data.name,
+          message: data.description
+        });
+        showPopup.update(true);
+      }
+    },
+    "see more"
+  ))), /* @__PURE__ */ snapp.create("div", { className: "mbl:hidden md:order-1" }, /* @__PURE__ */ snapp.create(
     "img",
     {
       className: "object-cover shadow-md shadow-gray-500 rounded-2xl md:w-full md:h-60",
-      src: "/assets/snapp.webp",
-      alt: "Snapp Framwork",
+      src: data.icon,
+      alt: data.name,
       loading: "lazy"
     }
   )));
@@ -82,9 +108,65 @@ var AboutMe = () => {
 };
 var AboutMe_default = AboutMe;
 
+// views/section/Popup.jsx
+var Popup = ({ showPopup, popupInfo }) => {
+  const backdropStyle = {
+    opacity: () => showPopup.value ? 1 : 0,
+    pointerEvents: () => showPopup.value ? "auto" : "none",
+    transition: "opacity 0.3s ease"
+  };
+  const popupStyle = {
+    opacity: () => showPopup.value ? 1 : 0,
+    translate: () => showPopup.value ? "0 -50%" : "0 0",
+    scale: () => showPopup.value ? "1" : "0.95",
+    transition: "all 0.3s ease-out",
+    pointerEvents: () => showPopup.value ? "auto" : "none"
+  };
+  return /* @__PURE__ */ snapp.create("div", null, /* @__PURE__ */ snapp.create(
+    "div",
+    {
+      style: backdropStyle,
+      className: "fixed inset-0 bg-black bg-opacity-50 z-20",
+      onClick: () => showPopup.update(false)
+    }
+  ), /* @__PURE__ */ snapp.create("div", { style: popupStyle, className: "fixed md:w-96 w-80 top-1/2 left-1/2 -translate-x-1/2 -translate-y-0 lg:left-auto lg:-translate-x-0 lg:right-5 shadow-lg flex flex-col bg-white rounded-xl z-50" }, /* @__PURE__ */ snapp.create("div", { className: "p-6 border-b" }, /* @__PURE__ */ snapp.create("h2", { className: "text-xl font-bold text-slate-900" }, () => popupInfo.value.head)), /* @__PURE__ */ snapp.create("div", { className: "p-6 h-80 overflow-y-auto scroll-bar" }, () => popupInfo.value.message), /* @__PURE__ */ snapp.create("div", { className: "p-4 border-t text-right" }, /* @__PURE__ */ snapp.create(
+    "button",
+    {
+      onClick: () => showPopup.update(false),
+      className: "bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+    },
+    "Got it!"
+  ))));
+};
+var Popup_default = Popup;
+
 // views/section/FeatureProject.jsx
+var projectData = [
+  {
+    name: "Something one",
+    icon: "/assets/snapp.webp",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?"
+  },
+  {
+    name: "Something two",
+    icon: "/assets/snapp.webp",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?"
+  },
+  {
+    name: "Something three",
+    icon: "/assets/snapp.webp",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo exercitationem, consectetur mollitia veniam sapiente quia quae quidem fugiat ad adipisci soluta odio quibusdam harum eligendi tempore amet quam rerum?"
+  }
+];
 var FeactureProject = () => {
-  return /* @__PURE__ */ snapp.create(Section_default, { id: "Feature-project" }, /* @__PURE__ */ snapp.create("h2", { className: "text-3xl font-bold my-4 text-slate-900" }, "Featured Projects"), /* @__PURE__ */ snapp.create("div", { className: "flex flex-col md:gap-y-4" }, /* @__PURE__ */ snapp.create(FeactureProjectContainer, null), /* @__PURE__ */ snapp.create(FeactureProjectContainerRight, null), /* @__PURE__ */ snapp.create(FeactureProjectContainer, null), /* @__PURE__ */ snapp.create(FeactureProjectContainerRight, null)));
+  const showPopup = snapp.dynamic(false);
+  const popupInfo = snapp.dynamic({
+    head: "Info",
+    message: "This is good"
+  });
+  return /* @__PURE__ */ snapp.create(Section_default, { id: "Feature-project" }, /* @__PURE__ */ snapp.create(Popup_default, { showPopup, popupInfo }), /* @__PURE__ */ snapp.create("h2", { className: "text-3xl font-bold my-4 text-slate-900" }, "Featured Projects"), /* @__PURE__ */ snapp.create("div", { className: "flex flex-col md:gap-y-4" }, projectData.map(
+    (data, index) => index % 2 === 0 ? /* @__PURE__ */ snapp.create(FeactureProjectContainer, { data, showPopup, popupInfo }) : /* @__PURE__ */ snapp.create(FeactureProjectContainerRight, { data, showPopup, popupInfo })
+  )));
 };
 var FeatureProject_default = FeactureProject;
 

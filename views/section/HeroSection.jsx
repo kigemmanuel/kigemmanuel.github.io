@@ -19,8 +19,9 @@ const HeroSection = () => {
             <div>
               <p class="font-bold text-slate-700">Software Engineer</p>
               <p class="mt-5 leading-5">
-                With a strong foundation in both frontend and backend development, I bring ideas to life through clean code and thoughtful design.
-                <br /><br />
+                With a strong foundation in both frontend and backend development, I bring ideas to life through clean code and thoughtful design.                
+              </p>
+              <p class="mt-5 leading-5">
                 Whether it’s developing modern websites, creating custom frameworks, or automating workflows, I’m passionate about crafting solutions that make a real impact.
               </p>
             </div>

@@ -447,10 +447,14 @@ const snapp = (() => {
   
         if (dynamic.type === "node") {
           dynamic.node.nodeValue = newTemp;
-        } else if (dynamic.type === "attr") {
+        } 
+        
+        else if (dynamic.type === "attr") {
           element.setAttribute(dynamic.attr, newTemp)
-        } else if (dynamic.type === "style") {
-          if (newTemp.includes('-')) {
+        }
+        
+        else if (dynamic.type === "style") {
+          if (dynamic.prop.includes('-')) {
             element.style.setProperty(dynamic.prop, newTemp);
           } else {
             element.style[dynamic.prop] = newTemp;

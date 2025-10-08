@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth; /* fallback in case Tailwind class is missing */
+}
+
 .preahvihear-regular {
   font-family: "Preahvihear", sans-serif;
   font-weight: 300;
@@ -445,14 +449,9 @@ body.my-background-dark .blob-4 {
   75% { transform: translateX(-50%) translate(24px, 16px) scale(1.04); }
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar - Always Visible */
 .scroll-bar {
   scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
-  transition: scrollbar-color 0.3s ease;
-}
-
-.scroll-bar:hover {
   scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
 }
 
@@ -466,23 +465,14 @@ body.my-background-dark .blob-4 {
 }
 
 .scroll-bar::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: 10px;
-  transition: background 0.3s ease;
-}
-
-.scroll-bar:hover::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .scroll-bar::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .scroll-bar::-webkit-scrollbar-thumb:active {
-  background: rgba(0, 0, 0, 1);
-}
-
-html {
-  scroll-behavior: smooth; /* fallback in case Tailwind class is missing */
+  background: rgba(0, 0, 0, 0.8);
 }
