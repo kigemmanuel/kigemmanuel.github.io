@@ -12,7 +12,7 @@ var ThemeIcon_default = ThemeIcon;
 // views/section/Navbar.jsx
 var Navbar = () => {
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const themeDark = snapp.dynamic(true);
+  const themeDark = snapp.dynamic(prefersDark);
   const updateTheme = () => {
     if (themeDark.value)
       return document.documentElement.classList.add("dark");

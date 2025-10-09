@@ -5,7 +5,7 @@ import ThemeIcon from '../components/ThemeIcon'
 const Navbar = () => {
 
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const themeDark = snapp.dynamic(true)
+  const themeDark = snapp.dynamic(prefersDark)
 
   const updateTheme = () => {
       if (themeDark.value)
