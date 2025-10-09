@@ -1,5 +1,5 @@
 import snapp from '../../src/snapp'
-import { FeactureProjectContainer, FeactureProjectContainerRight } from "../components/Containers"
+import { FeatureProjectContainer, FeatureProjectContainerRight } from "../components/Containers"
 import Section from "../components/Section"
 import Popup from './Popup'
 
@@ -32,11 +32,11 @@ const FeactureProject = () => {
     return (
         <Section id="Feature-project">
             <Popup showPopup={showPopup} popupInfo={popupInfo} />
-            <h2 className="text-3xl font-bold my-4 text-slate-900">Featured Projects</h2>
+            <h2 className="text-3xl font-bold my-4 text-slate-900 dark:text-gray-100 transition-colors duration-300">Featured Projects</h2>
             <div className="flex flex-col md:gap-y-4">
             {projectData.map((data, index) => (index % 2 === 0)
-                ? <FeactureProjectContainer data={data} showPopup={showPopup} popupInfo={popupInfo} />
-                : <FeactureProjectContainerRight data={data} showPopup={showPopup} popupInfo={popupInfo} />
+                ? <FeatureProjectContainer data={data} showPopup={showPopup} popupInfo={popupInfo} />
+                : <FeatureProjectContainerRight data={data} showPopup={showPopup} popupInfo={popupInfo} />
             )}
             </div>
         </Section>

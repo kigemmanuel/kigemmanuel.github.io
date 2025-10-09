@@ -8,7 +8,7 @@ const BtnLink = ({props, link, label, color = "slate"}) => {
     };
 
     return (
-        <a href={link} aria-label={label} class={colorMap[color] + " text-white border rounded px-10 py-3 text-sm cursor-pointer hover:translate-x-[2px] hover:translate-y-[2px]"}>
+        <a href={link} aria-label={label} class={colorMap[color] + " text-gray-100 border rounded px-10 py-3 text-sm cursor-pointer hover:translate-x-[2px] hover:translate-y-[2px]"}>
             {props}
         </a>
     )

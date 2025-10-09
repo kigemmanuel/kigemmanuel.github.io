@@ -68,16 +68,16 @@ import Section from '../components/Section'
 const TechStack = () => {
     return (
         <Section id="Tech-stack">
-          <h2 className="text-3xl font-bold my-4 text-slate-900">Tech Stack</h2>
+          <h2 className="text-3xl font-bold my-4 text-slate-900 dark:text-gray-100 transition-colors duration-300">Tech Stack</h2>
           <div className='md:grid mbl:space-y-8 p-4 pt-8 md:grid-cols-3 rounded-xl bg-black/60 backdrop-blur-lg'>
             
             <ListTech name="Frontend" data={frontend} />
-            <div className='mbl:h-[1px] mbl:w-full mbl:mx-auto bg-black md:h-full md:w-[1px] md:mx-auto'></div> {/* line */}
+            <div className='mbl:h-[1px] mbl:w-full mbl:mx-auto bg-black dark:bg-gray-100 md:h-full md:w-[1px] md:mx-auto duration-100'></div> {/* line */}
             <ListTech name="Backend" data={backend} />
             
             <div className='md:mt-8 w-full col-span-3 space-y-4 bg-black/70 p-4 py-6 rounded-xl'>
               <section className='space-y-2'>
-                <h3 className='text-white'>Tools</h3>
+                <h3 className='text-slate-900 dark:text-gray-100 transition-colors duration-300'>Tools</h3>
                 <div className='flex gap-4 flex-wrap'>
                   {tools.map(tool => (
                   <div className={"flex items-center gap-2 w-max bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-4 py-2 transition-all hover:scale-105 hover:shadow-lg group " + tool.style}>

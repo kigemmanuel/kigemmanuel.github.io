@@ -23,14 +23,14 @@ const Popup = ({showPopup, popupInfo}) => {
                 onClick={() => showPopup.update(false)}
             >
             </div>
-            <div style={popupStyle} className="fixed md:w-96 w-80 top-1/2 left-1/2 -translate-x-1/2 -translate-y-0 lg:left-auto lg:-translate-x-0 lg:right-5 shadow-lg flex flex-col bg-white rounded-xl z-50">
-                <div className="p-6 border-b">
-                    <h2 className="text-xl font-bold text-slate-900">{() => popupInfo.value.head}</h2>
+            <div style={popupStyle} className="fixed md:w-96 w-80 top-1/2 left-1/2 -translate-x-1/2 -translate-y-0 lg:left-auto lg:-translate-x-0 lg:right-5 shadow-lg flex flex-col rounded-xl z-50 bg-white dark:bg-slate-800 transition-colors duration-300">
+                <div className="p-6 border-b dark:border-slate-900 duration-300">
+                    <h2 className="text-xl font-semibold text-slate-900 dark:text-gray-200 transition-colors duration-300">{() => popupInfo.value.head}</h2>
                 </div>
-                <div className="p-6 h-80 overflow-y-auto scroll-bar">
+                <div className="p-6 h-80 overflow-y-auto scroll-bar text-slate-900 dark:text-gray-200 transition-colors duration-300">
                     {() => popupInfo.value.message}
                 </div>
-                <div className="p-4 border-t text-right">
+                <div className="p-4 border-t dark:border-slate-900 text-right duration-300">
                     <button
                         onClick={() => showPopup.update(false)}
                         className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition-colors"

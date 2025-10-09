@@ -29,4 +29,4 @@ const App = () => {
 }
 
 const SnappBody = document.querySelector("#snapp-body");
-snapp.render(SnappBody, App())
+snapp.render(SnappBody, App(), "replace")

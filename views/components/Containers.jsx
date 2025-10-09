@@ -7,20 +7,20 @@ const TransparentContainer = ({props, className}) => {
     )
 }
 
-const FeactureProjectContainer = ({data, showPopup, popupInfo}) => {
+const FeatureProjectContainer = ({data, showPopup, popupInfo}) => {
     return (
         <article className="my-2 grid md:grid-cols-2">
-            <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 md:order-1 flex-col justify-between">
+            <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 dark:mbl:bg-white/10 flex relative order-2 md:order-1 flex-col justify-between">
                 <div>
-                    <h2 className="text-xs font-bold text-slate-700">Freature Project</h2>
-                    <h4 className="text-xl font-bold text-slate-900">{data.name}</h4>
+                    <h2 className="text-xs font-medium text-slate-700 dark:text-gray-400 transition-colors duration-300">Feature Project</h2>
+                    <h4 className="text-xl font-semibold text-slate-900 dark:text-gray-100 transition-colors duration-300">{data.name}</h4>
                 </div>
-                <div className="text-black md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border overflow-hidden md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:w-[120%] md:h-min">
-                    <div className="font-light pr-2 line-clamp-4  mbl:line-clamp-6">
+                <div className="md:absolute md:inset-0 md:my-auto md:backdrop-blur-2xl md:border overflow-hidden md:border-white/30 dark:md:border-white/30 md:bg-gradient-to-br md:from-white/5 md:to-white/20 dark:md:from-slate-900/30 dark:md:to-slate-800/50 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:w-[120%] md:h-min transition-colors duration-300">
+                    <div className="font-light pr-2 line-clamp-4 mbl:line-clamp-6 text-slate-950 dark:text-gray-100 drop-shadow transition-colors duration-300">
                         {data.description}
                     </div>
                     <button
-                        className="text-blue-700"
+                        className="text-blue-700 dark:text-blue-400 hover:underline font-medium drop-shadow transition-colors duration-300"
                         onClick={() => {
                             popupInfo.update({
                                 head: data.name,
@@ -43,20 +43,20 @@ const FeactureProjectContainer = ({data, showPopup, popupInfo}) => {
     )
 }
 
-const FeactureProjectContainerRight = ({data, showPopup, popupInfo}) => {
+const FeatureProjectContainerRight = ({data, showPopup, popupInfo}) => {
     return (
         <article className="my-8 grid md:gap-4 md:grid-cols-2">
-            <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 flex relative order-2 flex-col md:justify-between">
+            <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 dark:mbl:bg-white/10 flex relative order-2 flex-col md:justify-between">
                 <div className="md:text-right">
-                    <h3 className="text-xs font-bold text-slate-700">Freature Project</h3>
-                    <h4 className="text-xl font-bold text-slate-900">{data.name}</h4>
+                    <h2 className="text-xs font-medium text-slate-700 dark:text-gray-400 transition-colors duration-300">Feature Project</h2>
+                    <h4 className="text-xl font-semibold text-slate-900 dark:text-gray-100 transition-colors duration-300">{data.name}</h4>
                 </div>
-                <div className="text-black md:absolute md:inset-0 md:my-auto md:backdrop-blur-md md:border md:border-white/30 md:bg-blue-600/10 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:-translate-x-[15%] md:w-[120%] md:h-min">
-                    <div className="font-light pr-2 line-clamp-3 mbl:line-clamp-6">
+                <div className="md:absolute md:inset-0 md:my-auto md:backdrop-blur-2xl md:border overflow-hidden md:border-white/30 dark:md:border-white/30 md:bg-gradient-to-bl md:from-white/5 md:to-white/20 dark:md:from-slate-900/50 dark:md:to-slate-800/30 md:shadow-xl md:py-5 md:px-3 md:rounded-2xl md:translate-y-6 md:-translate-x-[15%] md:w-[120%] md:h-min transition-colors duration-300">
+                    <div className="font-light pr-2 line-clamp-3 mbl:line-clamp-6 text-slate-950 dark:text-gray-100 drop-shadow transition-colors duration-300">
                         {data.description}
                     </div>
                     <button
-                        className="text-blue-700"
+                        className="text-blue-700 dark:text-blue-400 hover:underline font-medium drop-shadow transition-colors duration-300"
                         onClick={() => {
                             popupInfo.update({
                                 head: data.name,
@@ -82,7 +82,7 @@ const FeactureProjectContainerRight = ({data, showPopup, popupInfo}) => {
 const ListTech = ({name, data}) => {
     return (
         <section className='space-y-6'>
-          <h3 className='text-xl text-black'>{name}</h3>
+          <h3 className='text-xl text-slate-900 dark:text-gray-100 transition-colors duration-300'>{name}</h3>
           <div className='flex flex-wrap gap-4 mbl:w-[100%] w-[80%]'>
           {data.map((tech, idx) => (
             <div className={"flex items-center gap-2 w-max bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-4 py-2 transition-all hover:scale-105 hover:shadow-lg group " + tech.style}>
@@ -97,7 +97,7 @@ const ListTech = ({name, data}) => {
 
 export { 
     TransparentContainer, 
-    FeactureProjectContainer, 
-    FeactureProjectContainerRight,
+    FeatureProjectContainer, 
+    FeatureProjectContainerRight,
     ListTech
  }

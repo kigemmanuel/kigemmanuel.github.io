@@ -14,14 +14,14 @@ const HeroSection = () => {
               class="w-48 h-48 object-cover rounded-full md:mb-0" 
             />
           </div>
-          <article class="text-slate-900">
-            <h1 class="text-4xl font-bold text-slate-900">Hi, I'm kigemmanuel</h1>
+          <article class="text-slate-900 dark:text-gray-100 transition-colors duration-300">
+            <h1 class="text-4xl font-bold">Hi, I'm kigemmanuel</h1>
             <div>
-              <p class="font-bold text-slate-700">Software Engineer</p>
-              <p class="mt-5 leading-5">
+              <p class="font-medium text-slate-700 dark:text-gray-400 transition-colors duration-300">Software Engineer</p>
+              <p class="mt-5 leading-5 text-slate-900 dark:text-gray-100 transition-colors duration-300">
                 With a strong foundation in both frontend and backend development, I bring ideas to life through clean code and thoughtful design.                
               </p>
-              <p class="mt-5 leading-5">
+              <p class="mt-5 leading-5 text-slate-900 dark:text-gray-100 transition-colors duration-300">
                 Whether it’s developing modern websites, creating custom frameworks, or automating workflows, I’m passionate about crafting solutions that make a real impact.
               </p>
             </div>
