@@ -9,7 +9,7 @@ const TransparentContainer = ({props, className}) => {
 
 const FeatureProjectContainer = ({data, showPopup, popupInfo}) => {
     return (
-        <article className="my-2 grid md:grid-cols-2">
+        <div className="my-2 grid md:grid-cols-2">
             <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 dark:mbl:bg-white/10 flex relative order-2 md:order-1 flex-col justify-between">
                 <div>
                     <h2 className="text-xs font-medium text-slate-700 dark:text-gray-400 transition-colors duration-300">Feature Project</h2>
@@ -39,13 +39,13 @@ const FeatureProjectContainer = ({data, showPopup, popupInfo}) => {
                     loading="lazy"
                 />
             </div>
-        </article>
+        </div>
     )
 }
 
 const FeatureProjectContainerRight = ({data, showPopup, popupInfo}) => {
     return (
-        <article className="my-8 grid md:gap-4 md:grid-cols-2">
+        <div className="my-8 grid md:gap-4 md:grid-cols-2">
             <div className="mbl:gap-y-4 mbl:rounded-xl mbl:backdrop-blur-lg mbl:px-5 mbl:py-8 mbl:bg-black/10 dark:mbl:bg-white/10 flex relative order-2 flex-col md:justify-between">
                 <div className="md:text-right">
                     <h2 className="text-xs font-medium text-slate-700 dark:text-gray-400 transition-colors duration-300">Feature Project</h2>
@@ -75,7 +75,7 @@ const FeatureProjectContainerRight = ({data, showPopup, popupInfo}) => {
                     loading="lazy"
                 />
             </div>
-        </article>
+        </div>
     )
 }
 

@@ -10,34 +10,34 @@ const AboutMe = () => {
             </div>
             <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 my-4">
                 <TransparentContainer className="text-red-500 dark:text-red-400 transition-colors duration-300">
-                    <article>
+                    <div>
                         I build complete web applications from front to back using React, NodeJS, and Express, with a strong focus on security, speed, and creating interfaces that users actually enjoy using.
-                    </article>
+                    </div>
                 </TransparentContainer>
                 <TransparentContainer className="text-blue-700 dark:text-blue-400 transition-colors duration-300">
-                    <article>
+                    <div>
                         I create sleek, responsive interfaces using React, Snapp, TypeScript, and Tailwind CSS that work flawlessly on any device while keeping the user experience smooth and accessible.
-                    </article>
+                    </div>
                 </TransparentContainer>
                 <TransparentContainer className="text-red-500 dark:text-red-400 transition-colors duration-300">
-                    <article>
+                    <div>
                         I develop robust server systems with NodeJS, Express, and PHP, handling everything from secure user authentication to database management that keeps applications running reliably.
-                    </article>
+                    </div>
                 </TransparentContainer>
                 <TransparentContainer className="text-purple-700 dark:text-purple-400 transition-colors duration-300">
-                    <article>
+                    <div>
                         I build practical Telegram applications that integrate payments, send real-time notifications, and make everyday tasks easier for users directly within their favorite messaging app.
-                    </article>
+                    </div>
                 </TransparentContainer>
                 <TransparentContainer className="text-blue-700 dark:text-blue-400 transition-colors duration-300">
-                    <article>
+                    <div>
                         I design efficient database systems using MongoDB and MySQL, ensuring your data stays protected with encryption while maintaining quick access and solid performance.
-                    </article>
+                    </div>
                 </TransparentContainer>
                 <TransparentContainer className="text-purple-700 dark:text-purple-400 transition-colors duration-300">
-                    <article>
-                        I connect apps to external services like payment processors, social platforms, and cloud tools, making sure data flows securely between different systems without breaking a sweat.
-                    </article>
+                    <div>
+                        I connect apps to external services like social platforms, and cloud tools, making sure data flows securely between different systems without breaking a sweat.
+                    </div>
                 </TransparentContainer>
             </div>
         </Section>

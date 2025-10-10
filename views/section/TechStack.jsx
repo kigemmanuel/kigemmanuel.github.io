@@ -76,8 +76,9 @@ const TechStack = () => {
             <ListTech name="Backend" data={backend} />
             
             <div className='md:mt-8 w-full col-span-3 space-y-4 bg-black/70 p-4 py-6 rounded-xl'>
+              
               <section className='space-y-2'>
-                <h3 className='text-slate-900 dark:text-gray-100 transition-colors duration-300'>Tools</h3>
+                <h3 className='text-gray-100'>Tools</h3>
                 <div className='flex gap-4 flex-wrap'>
                   {tools.map(tool => (
                   <div className={"flex items-center gap-2 w-max bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-4 py-2 transition-all hover:scale-105 hover:shadow-lg group " + tool.style}>
@@ -90,6 +91,7 @@ const TechStack = () => {
                   </div>
                 </div>
               </section>
+
               <section className='space-y-2'>
                 <h3 className='text-red-400'>Mastering</h3>
                 <div className='flex gap-4 flex-wrap'>
@@ -101,6 +103,7 @@ const TechStack = () => {
                   ))}
                 </div>
               </section>
+
               <section className='space-y-2'>
                 <h3 className='text-blue-400'>Interests</h3>
                 <div className='flex gap-4 flex-wrap'>
@@ -111,8 +114,8 @@ const TechStack = () => {
                   ))}
                 </div>
               </section>
-            </div>
 
+            </div>
           </div>
         </Section>
     )

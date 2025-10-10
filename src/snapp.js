@@ -1,9 +1,9 @@
 
 /*!
- * Snapp Framework v2.1.0
+ * Snapp Framework v2.1.1
  * A lightweight JSX-like framework for vanilla JavaScript
  *
- * @version 2.1.0
+ * @version 2.1.1
  * @license MIT
  * @repository https://github.com/kigemmanuel/Snapp
  *

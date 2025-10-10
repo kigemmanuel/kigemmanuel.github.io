@@ -14,7 +14,7 @@ const HeroSection = () => {
               class="w-48 h-48 object-cover rounded-full md:mb-0" 
             />
           </div>
-          <article class="text-slate-900 dark:text-gray-100 transition-colors duration-300">
+          <div class="text-slate-900 dark:text-gray-100 transition-colors duration-300">
             <h1 class="text-4xl font-bold">Hi, I'm kigemmanuel</h1>
             <div>
               <p class="font-medium text-slate-700 dark:text-gray-400 transition-colors duration-300">Software Engineer</p>
@@ -25,7 +25,7 @@ const HeroSection = () => {
                 Whether it’s developing modern websites, creating custom frameworks, or automating workflows, I’m passionate about crafting solutions that make a real impact.
               </p>
             </div>
-          </article>
+          </div>
         </div>
 
         <div className="flex flex-wrap gap-4 mt-8  lg:mt-0">
