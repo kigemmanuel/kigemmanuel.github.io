@@ -10,7 +10,7 @@ const HeroSection = () => {
           <div class="mx-auto shrink-0 mb-14 p-2 backdrop-blur-xl bg-gradient-to-br from-orange-500/30 via-purple-500/70 to-blue-700/50 rounded-full">
             <img 
               src="/assets/kigemmanuel.webp"
-              alt="kigemmanuel"
+              alt="kigemmanuel also known as kigs"
               class="w-48 h-48 object-cover rounded-full md:mb-0" 
             />
           </div>
