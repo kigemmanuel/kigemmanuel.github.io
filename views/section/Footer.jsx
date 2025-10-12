@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             <div class="py-12 border-t border-slate-200 dark:border-slate-800 text-center">
               <p class="text-gray-400 dark:text-slate-400 text-sm">
-                &copy; 2025 kigemmanuel. All rights reserved. | Built with passion and precision.
+                &copy; 2025 kigemmanuel. All rights reserved. Built with passion and precision.
               </p>
             </div>
         </div>
