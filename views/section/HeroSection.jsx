@@ -35,7 +35,7 @@ const HeroSection = () => {
 
         <div class="flex gap-4 mt-8">
           <Github color="white" />
-          <Facebook color="blue" />
+          {/* <Facebook color="blue" /> */}
           <Gmail color="red" />
         </div>
       </Section>
