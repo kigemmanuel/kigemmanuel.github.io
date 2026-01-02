@@ -1,4 +1,4 @@
-import { Facebook, Github, Gmail } from "../components/Socials"
+import { Github, Gmail, X } from "../components/Socials"
 
 const Footer = () => {
     return (
@@ -22,7 +22,7 @@ const Footer = () => {
                 <div className="space-y-3">
                     <h2 className="text-md text-gray-300">Let's Connect</h2>
                     <div className="flex gap-x-2">
-                        {/* <Facebook /> */}
+                        <X />
                         <Github />
                         <Gmail />
                     </div>

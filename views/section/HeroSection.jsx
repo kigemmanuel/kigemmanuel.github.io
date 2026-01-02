@@ -1,6 +1,6 @@
 import Section from "../components/Section"
 import { BtnLink } from "../components/Button"
-import { Github, Facebook, Gmail } from "../components/Socials"
+import { Github, X, Gmail } from "../components/Socials"
 
 // Use class not className so i can easily put it on my html file!
 const HeroSection = () => {
@@ -35,7 +35,7 @@ const HeroSection = () => {
 
         <div class="flex gap-4 mt-8">
           <Github color="white" />
-          {/* <Facebook color="blue" /> */}
+          <X color="blue" />
           <Gmail color="red" />
         </div>
       </Section>
